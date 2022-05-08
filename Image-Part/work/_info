@@ -1,0 +1,435 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/deep_learning_accelerators/sim
+vconv
+Z0 !s110 1651942431
+!i10b 1
+!s100 LAd6LeJ[BSSB^1LZF_]ZY1
+IRl3Jhb5X=:7`CCVfO5;aD3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl
+w1649972164
+8C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv.v
+FC:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv.v
+Z3 L0 23
+Z4 OL;L;10.4;61
+r1
+!s85 0
+31
+!s108 1651942431.623000
+!s107 C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv.v|
+!i113 0
+Z5 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vconv1
+Z6 !s110 1651942565
+!i10b 1
+!s100 a?ob8e2@hF1i7[H4@M4b93
+IAYEij1?MN`RNNe65?kZaK3
+R1
+R2
+w1651942253
+8C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv1.v
+FC:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv1.v
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1651942565.594000
+!s107 C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv1.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv1.v|
+!i113 0
+R5
+vconv1_verify
+DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
+R6
+!i10b 1
+!s100 Qol^V2f]`95HJn1YTK5]C3
+I5=4]10dJe[Sino[G4Ym4d0
+R1
+!s105 conv1_verify_sv_unit
+S1
+R2
+w1651317682
+8C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv1_verify.sv
+FC:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv1_verify.sv
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1651942565.133000
+!s107 C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv1_verify.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv1_verify.sv|
+!i113 0
+o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vconv1banks
+R6
+!i10b 1
+!s100 2f5[FZI8Jn1kCJT:;f8eA1
+IGQMD3;=m5Q0TC]89Nfi@I3
+R1
+R2
+w1651404008
+8C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv1banks.v
+FC:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv1banks.v
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1651942565.224000
+!s107 C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv1banks.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv1banks.v|
+!i113 0
+R5
+vconv1buffer
+R6
+!i10b 1
+!s100 IA5aMh]mHoO5bgWf5F1<G2
+Ib`9gLP]JDG:fCPB]ZHUQb3
+R1
+R2
+w1651351098
+8C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv1buffer.v
+FC:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv1buffer.v
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1651942565.273000
+!s107 C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv1buffer.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv1buffer.v|
+!i113 0
+R5
+vconv1v2
+Z7 !s110 1651942432
+!i10b 1
+!s100 QWb6[l=Um]<5Ge2ITn^;V1
+I2OWae]hoEBJaQ5U6V]3Vb1
+R1
+R2
+w1651359444
+8C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv1v2.v
+FC:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv1v2.v
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1651942432.433000
+!s107 C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv1v2.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv1v2.v|
+!i113 0
+R5
+vconv2d
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 b]6lYonEMQnG8zY=WAF>G0
+IGYF?Xi018zF1]alBKiiB?0
+R2
+w1650051177
+8C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv2d.v
+FC:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv2d.v
+L0 1
+R4
+!s108 1650051182.436000
+!s107 C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv2d.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv2d.v|
+!i113 0
+R5
+vconv2d1x1
+R6
+!i10b 1
+!s100 _o2BCTI2PIRGib2mIR8J<2
+IP[[kQfzg4e4>fFR5a=QZ=1
+R1
+R2
+w1651581844
+8C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv2d1x1.v
+FC:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv2d1x1.v
+L0 3
+R4
+r1
+!s85 0
+31
+!s108 1651942565.004000
+!s107 C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv2d1x1.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv2d1x1.v|
+!i113 0
+R5
+vconv2d3x3
+R6
+!i10b 1
+!s100 Uc>B9W<m@hZJR@Hn91mY]1
+I2?@2^XT9RK3o`j[z^jg9m2
+R1
+R2
+w1651422103
+8C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv2d3x3.v
+FC:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv2d3x3.v
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1651942565.085000
+!s107 C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv2d3x3.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv2d3x3.v|
+!i113 0
+R5
+vgetmax
+R6
+!i10b 1
+!s100 WT=cH@_U4<aA[6[2oc9?G0
+IUL^2zRW>7lh<Xa@[Ob`h;0
+R1
+R2
+w1651251127
+8C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/getmax.v
+FC:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/getmax.v
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1651942565.362000
+!s107 C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/getmax.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/getmax.v|
+!i113 0
+R5
+vimageControl
+Z8 !s110 1651942491
+!i10b 1
+!s100 6zUKzIlLm]1G8ze58G?aJ0
+IzWkRdRJTHBWT]B:MJPd@h3
+R1
+R2
+w1650041427
+8C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/imageControl.v
+FC:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/imageControl.v
+L0 22
+R4
+r1
+!s85 0
+31
+!s108 1651942491.128000
+!s107 C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/imageControl.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/imageControl.v|
+!i113 0
+R5
+nimage@control
+vimageProcessTop
+R0
+!i10b 1
+!s100 iF;UCgk?FL]GM9Hg`IkmL0
+IYiC:Ka5TM5Be5g5W87J4Z1
+R1
+R2
+w1649863199
+8C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/imageProcessTop.v
+FC:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/imageProcessTop.v
+R3
+R4
+r1
+!s85 0
+31
+!s108 1651942431.757000
+!s107 C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/imageProcessTop.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/imageProcessTop.v|
+!i113 0
+R5
+nimage@process@top
+vinputimage
+R6
+!i10b 1
+!s100 In2[J2LM<k1EMQfOTJWT50
+IGh?JdHEU=^RjPdjVfcgDn2
+R1
+R2
+w1651361268
+8C:\Users\Hisham Elreedy\Downloads\SpatialFilter-master\SpatialFilter-master\rtl\inputimage.v
+FC:\Users\Hisham Elreedy\Downloads\SpatialFilter-master\SpatialFilter-master\rtl\inputimage.v
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1651942565.453000
+!s107 C:\Users\Hisham Elreedy\Downloads\SpatialFilter-master\SpatialFilter-master\rtl\inputimage.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:\Users\Hisham Elreedy\Downloads\SpatialFilter-master\SpatialFilter-master\rtl\inputimage.v|
+!i113 0
+R5
+vlineBuffer
+R0
+!i10b 1
+!s100 M[Z<R[Yd6f2`[]ff=IdWQ0
+IZ3ab;4iidZ[WEPhFBE>M]0
+R1
+R2
+w1650035688
+8C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/lineBuffer.v
+FC:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/lineBuffer.v
+R3
+R4
+r1
+!s85 0
+31
+!s108 1651942431.801000
+!s107 C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/lineBuffer.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/lineBuffer.v|
+!i113 0
+R5
+nline@buffer
+vmaxpool2d3x3
+R6
+!i10b 1
+!s100 j:[<RhR:7cZ=P<CZAz9;K2
+IOHJN5;cDT3A1^<O63B=_f3
+R1
+R2
+w1651440971
+8C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/maxpool2d3x3.v
+FC:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/maxpool2d3x3.v
+L0 2
+R4
+r1
+!s85 0
+31
+!s108 1651942565.318000
+!s107 C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/maxpool2d3x3.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/maxpool2d3x3.v|
+!i113 0
+R5
+vmul_signed
+R6
+!i10b 1
+!s100 gU12>chbj6hoS]EUfLVeh3
+IknFZ6UJ`5PiNEQO>LTin53
+R1
+R2
+w1650414608
+8C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/mul_signed.v
+FC:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/mul_signed.v
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1651942565.180000
+!s107 C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/mul_signed.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/mul_signed.v|
+!i113 0
+R5
+vpingpongmem
+!s110 1651940609
+!i10b 1
+!s100 _1c2O[g3?8daGm4DMQRaB1
+I8h<U0?>hJ8z?L9Cc80JFT0
+R1
+R2
+w1651940600
+8C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/pingpongmem.v
+FC:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/pingpongmem.v
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1651940609.258000
+!s107 C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/pingpongmem.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/pingpongmem.v|
+!i113 0
+R5
+vsqueezeweights
+R6
+!i10b 1
+!s100 TZM_5FZGmW88:PoRM`PAT1
+IkZC0c1FfA@11567CT:n;01
+R1
+R2
+w1651920652
+8C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/squeezeweights.v
+FC:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/squeezeweights.v
+L0 3
+R4
+r1
+!s85 0
+31
+!s108 1651942565.496000
+!s107 C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/squeezeweights.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/squeezeweights.v|
+!i113 0
+R5
+vtb
+R8
+!i10b 1
+!s100 GkU`5EHc;46fQLQjafUCU0
+I]@?jXBYl^``=?>:ecmPcE1
+R1
+R2
+w1650046113
+8C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/tb/tb.v
+FC:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/tb/tb.v
+L0 26
+R4
+r1
+!s85 0
+31
+!s108 1651942491.175000
+!s107 C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/tb/tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/tb/tb.v|
+!i113 0
+R5
+vtoplevel
+R6
+!i10b 1
+!s100 aD2dTfn0ImGSH?dOQj6l[0
+Ij4g:=88GA_ZjDbEbYhhoQ0
+R1
+R2
+w1651942395
+8C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/toplevel.v
+FC:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/toplevel.v
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1651942565.650000
+!s107 C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/toplevel.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/toplevel.v|
+!i113 0
+R5
+vtoplevelv2
+R7
+!i10b 1
+!s100 VLhdDSBcdPHP_XmIE;;Uc2
+IM9S>9=>3z0klE9dQgZk>a3
+R1
+R2
+w1651361249
+8C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/toplevelv2.v
+FC:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/toplevelv2.v
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1651942432.338000
+!s107 C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/toplevelv2.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/toplevelv2.v|
+!i113 0
+R5

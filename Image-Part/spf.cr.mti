@@ -1,0 +1,116 @@
+{C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv1buffer.v} {1 {vlog -work work -vopt -stats=none {C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv1buffer.v}
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module conv1buffer
+
+Top level modules:
+	conv1buffer
+
+} {} {}} {C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv2d3x3.v} {1 {vlog -work work -vopt -stats=none {C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv2d3x3.v}
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module conv2d3x3
+-- Compiling module mul_signed
+
+Top level modules:
+	conv2d3x3
+
+} {} {}} {C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/toplevel.v} {1 {vlog -work work -vopt -stats=none {C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/toplevel.v}
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module toplevel
+
+Top level modules:
+	toplevel
+
+} {} {}} {C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/inputimage.v} {1 {vlog -work work -vopt -stats=none {C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/inputimage.v}
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module inputimage
+
+Top level modules:
+	inputimage
+
+} {} {}} {C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/squeeze1x1.v} {0 {vlog -work work -vopt -stats=none {C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/squeeze1x1.v}
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module squeeze1x1
+** Error: (vlog-13069) C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/squeeze1x1.v(184): near "imgdata": syntax error, unexpected IDENTIFIER, expecting .* or '.'.
+
+** Error: (vlog-13069) C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/squeeze1x1.v(186): near "imgdata": syntax error, unexpected IDENTIFIER, expecting .* or '.'.
+
+** Error: (vlog-13069) C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/squeeze1x1.v(188): near "imgdata": syntax error, unexpected IDENTIFIER, expecting .* or '.'.
+
+** Error: (vlog-13069) C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/squeeze1x1.v(190): near "imgdata": syntax error, unexpected IDENTIFIER, expecting .* or '.'.
+
+** Error: (vlog-13069) C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/squeeze1x1.v(192): near "imgdata": syntax error, unexpected IDENTIFIER, expecting .* or '.'.
+
+** Error: (vlog-13069) C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/squeeze1x1.v(194): near "imgdata": syntax error, unexpected IDENTIFIER, expecting .* or '.'.
+
+** Error: (vlog-13069) C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/squeeze1x1.v(196): near "imgdata": syntax error, unexpected IDENTIFIER, expecting .* or '.'.
+
+** Error: (vlog-13069) C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/squeeze1x1.v(198): near "imgdata": syntax error, unexpected IDENTIFIER, expecting .* or '.'.
+
+
+} {4.0 5.0 6.0 7.0 8.0 9.0 10.0 11.0 12.0 13.0 14.0 15.0 16.0 17.0 18.0 19.0} {}} {C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/squeezeweights.v} {1 {vlog -work work -vopt -stats=none {C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/squeezeweights.v}
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module squeezeweights
+
+Top level modules:
+	squeezeweights
+
+} {} {}} {C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/pingpongmem.v} {0 {vlog -work work -vopt -stats=none {C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/pingpongmem.v}
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module pingpongmem
+** Error: C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/pingpongmem.v(39): (vlog-2730) Undefined variable: 'wrpntr'.
+
+** Error: C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/pingpongmem.v(39): (vlog-2730) Undefined variable: 'data'.
+
+** Error: C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/pingpongmem.v(49): (vlog-2730) Undefined variable: 'rdpntr'.
+
+
+} {4.0 5.0 6.0 7.0 8.0 9.0} {}} {C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/maxpool2d3x3.v} {1 {vlog -work work -vopt -stats=none {C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/maxpool2d3x3.v}
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module maxpool2d3x3
+
+Top level modules:
+	maxpool2d3x3
+
+} {} {}} {C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv2d1x1.v} {1 {vlog -work work -vopt -stats=none {C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv2d1x1.v}
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module conv2d1x1
+
+Top level modules:
+	conv2d1x1
+
+} {} {}} {C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv1banks.v} {1 {vlog -work work -vopt -stats=none {C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv1banks.v}
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module conv1banks
+
+Top level modules:
+	conv1banks
+
+} {} {}} {C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv1_verify.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv1_verify.sv}
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module conv1_verify
+
+Top level modules:
+	conv1_verify
+
+} {} {}} {C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/getmax.v} {1 {vlog -work work -vopt -stats=none {C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/getmax.v}
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module getmax
+
+Top level modules:
+	getmax
+
+} {} {}} {C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv1.v} {1 {vlog -work work -vopt -stats=none {C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv1.v}
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module conv1
+
+Top level modules:
+	conv1
+
+} {} {}} {C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/mul_signed.v} {1 {vlog -work work -vopt -stats=none {C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/mul_signed.v}
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module mul_signed
+
+Top level modules:
+	mul_signed
+
+} {} {}}

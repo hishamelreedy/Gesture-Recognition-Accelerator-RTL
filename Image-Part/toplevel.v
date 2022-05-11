@@ -12,27 +12,27 @@ initial begin
     maxpoolvalid = 0;
     // Open Output File
     file = $fopen("opfconv1.txt","w");
-    file1 = $fopen("opfpool1.txt","w");
+    file1 = $fopen("opfpool1r.txt","w");
     
 end
 always #5 clk=~clk;
 // Layer 1 Conv1
-reg [15:0] st1mem [0:63];
-reg [16*64-1:0] st1w;
+reg [15:0] st1mem [0:255];
+wire [16*256-1:0] st1w;
 wire conv1valid;
-reg [16*64-1:0] conv1out;
-reg [16-1:0] conv1outmem [0:63];
-conv1 st1 (.clk(clk), .rst(rst),.i_data_valid(i_data_valid), .output_imw(st1w), .o_convolved_data_valid(conv1valid));
+wire [16*256-1:0] conv1out;
+reg [16-1:0] conv1outmem [0:255];
+conv1 st1 (.clk(clk), .rst(rst),.i_data_valid(i_data_valid), .output_imw(st1w[1023:0]), .o_convolved_data_valid(conv1valid));
 reg rd_en;
 integer i;
 always @(*)
 begin
-for (i=0; i<64; i=i+1)
+for (i=0; i<256; i=i+1)
     st1mem[i]<=st1w[i*16+:16];
 end
 reg [32-1:0] sentsize = 'd0;
-reg [32-1:0] pooladdr;
-conv1banks conv1bnks (.clk(clk),.rst(rst),.wren(i_data_valid),.rden(maxpoolvalid),.address(sentsize),.address2(pooladdr),.datain(st1w),.dataout(conv1out));
+wire [32-1:0] pooladdr;
+poolbanks poolbnks (.clk(clk),.rst(rst),.wren(i_data_valid),.rden(maxpoolvalid),.address(sentsize),.address2(pooladdr),.datain(st1w),.dataout(conv1out));
 always@(posedge clk)
 begin
    if(conv1valid) begin
@@ -72,5 +72,5 @@ end
 // Ping-Pong Memory
 
 // Squeeze 1x1
-squeezeweights sqwhts();
+//squeezeweights sqwhts();
 endmodule

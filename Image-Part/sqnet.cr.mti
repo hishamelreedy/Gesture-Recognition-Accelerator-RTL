@@ -1,0 +1,87 @@
+{C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/pingpongmem.v} {0 {vlog -work work -stats=none {C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/pingpongmem.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module pingpongmem
+** Error: C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/pingpongmem.v(39): (vlog-2730) Undefined variable: 'wrpntr'.
+** Error: C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/pingpongmem.v(39): (vlog-2730) Undefined variable: 'data'.
+** Error: C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/pingpongmem.v(49): (vlog-2730) Undefined variable: 'rdpntr'.
+
+} {4.0 7.0} {}} {C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/toplevel.v} {1 {vlog -work work -stats=none {C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/toplevel.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module toplevel
+
+Top level modules:
+	toplevel
+
+} {} {}} {C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/squeeze1x1.v} {0 {vlog -work work -stats=none {C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/squeeze1x1.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module squeeze1x1
+** Error: (vlog-13069) C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/squeeze1x1.v(184): near "imgdata": syntax error, unexpected IDENTIFIER, expecting .* or '.'.
+** Error: (vlog-13069) C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/squeeze1x1.v(186): near "imgdata": syntax error, unexpected IDENTIFIER, expecting .* or '.'.
+** Error: (vlog-13069) C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/squeeze1x1.v(188): near "imgdata": syntax error, unexpected IDENTIFIER, expecting .* or '.'.
+** Error: (vlog-13069) C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/squeeze1x1.v(190): near "imgdata": syntax error, unexpected IDENTIFIER, expecting .* or '.'.
+** Error: (vlog-13069) C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/squeeze1x1.v(192): near "imgdata": syntax error, unexpected IDENTIFIER, expecting .* or '.'.
+** Error: (vlog-13069) C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/squeeze1x1.v(194): near "imgdata": syntax error, unexpected IDENTIFIER, expecting .* or '.'.
+** Error: (vlog-13069) C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/squeeze1x1.v(196): near "imgdata": syntax error, unexpected IDENTIFIER, expecting .* or '.'.
+** Error: (vlog-13069) C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/squeeze1x1.v(198): near "imgdata": syntax error, unexpected IDENTIFIER, expecting .* or '.'.
+
+} {4.0 12.0} {}} {C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/squeezeweights.v} {1 {vlog -work work -stats=none {C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/squeezeweights.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module squeezeweights
+
+Top level modules:
+	squeezeweights
+
+} {} {}} {C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/conv2d1x1.v} {1 {vlog -work work -stats=none {C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/conv2d1x1.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module conv2d1x1
+
+Top level modules:
+	conv2d1x1
+
+} {} {}} {C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/conv1.v} {1 {vlog -work work -stats=none {C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/conv1.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module conv1
+
+Top level modules:
+	conv1
+
+} {} {}} {C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/poolbanks.v} {1 {vlog -work work -stats=none {C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/poolbanks.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module poolbanks
+
+Top level modules:
+	poolbanks
+
+} {} {}} {C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/conv2d3x3.v} {1 {vlog -work work -stats=none {C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/conv2d3x3.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module conv2d3x3
+-- Compiling module mul_signed
+
+Top level modules:
+	conv2d3x3
+
+} {} {}} {C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/maxpool2d3x3.v} {1 {vlog -work work -stats=none {C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/maxpool2d3x3.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module maxpool2d3x3
+
+Top level modules:
+	maxpool2d3x3
+
+} {} {}} {C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/getmax.v} {1 {vlog -work work -stats=none {C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/getmax.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module getmax
+
+Top level modules:
+	getmax
+
+} {} {}} {C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/maxpool2d.v} {1 {vlog -work work -stats=none {C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/maxpool2d.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+
+} {} {}} {C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/mul_signed.v} {1 {vlog -work work -stats=none {C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/mul_signed.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module mul_signed
+
+Top level modules:
+	mul_signed
+
+} {} {}}

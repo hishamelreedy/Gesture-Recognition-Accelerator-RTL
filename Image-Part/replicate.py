@@ -27,38 +27,38 @@ textfile.close()
 
 
 texts=[]
-for i in range(1,65):
+for i in range(1,257):
     text = "bank{}[i] <= 16'd0;".format(i)
     texts.append(text)
 
-textfile = open("rep.txt", "w")
+textfile = open("rep1.txt", "w")
 for element in texts:
     textfile.write(element + "\n")
 textfile.close()
 
 texts=[]
-for i in range(1,65):
+for i in range(1,257):
     text = "bank{}[address] <= datainmem[{}];".format(i,i-1)
     texts.append(text)
 
-textfile = open("rep.txt", "w")
+textfile = open("rep1.txt", "w")
 for element in texts:
     textfile.write(element + "\n")
 textfile.close()
 
 texts=[]
-for i in range(1,65):
-    text = "    dataoutmem[{}] <= bank{}[address];".format(i-1,i)
+for i in range(1,257):
+    text = "    dataoutmem[{}] <= bank{}[address2];".format(i-1,i)
     texts.append(text)
 
-textfile = open("rep.txt", "w")
+textfile = open("rep1.txt", "w")
 for element in texts:
     textfile.write(element + "\n")
 textfile.close()
 
 
 texts=[]
-for i in range(1,65):
+for i in range(1,257):
     text = "reg [15:0] bank{} [0:111*111-1];".format(i)
     texts.append(text)
 

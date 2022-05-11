@@ -1,5 +1,6 @@
 project compileall
-vsim -gui -novopt -wlf spf.wlf work.toplevel
+# vsim -gui -novopt -wlf spf.wlf work.toplevel
+vsim -gui -wlf spf.wlf work.toplevel
 add wave -position insertpoint sim:/toplevel/*
 add wave -position insertpoint sim:/toplevel/maxpool/multData
 add wave -position insertpoint sim:/toplevel/maxpool/address

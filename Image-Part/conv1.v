@@ -11,7 +11,7 @@ wire [datwidth-1:0] output_im [0:64-1];
 output reg [datwidth*64-1:0] output_imw;
 reg [datwidth-1:0] imgdata [inputsize*inputsize*input_channel-1:0];
 output o_convolved_data_valid;
-reg [64-1:0] convolved_data_valid;
+wire [64-1:0] convolved_data_valid;
 integer i;
 always @(*)
     for (i=0; i<64; i=i+1)

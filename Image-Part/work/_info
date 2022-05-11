@@ -1,6 +1,7 @@
 m255
 K4
 z2
+!s11f MIXED_VERSIONS
 13
 !s112 1.1
 !i10d 8192
@@ -29,90 +30,101 @@ r1
 !i113 0
 Z5 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 vconv1
-Z6 !s110 1651942565
+Z6 !s110 1652273194
 !i10b 1
-!s100 a?ob8e2@hF1i7[H4@M4b93
-IAYEij1?MN`RNNe65?kZaK3
+!s100 <KK6BZXPTLEY=kNk7=Ji<1
+Z7 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I:PFVRlAk8U5]j5leZZaB[0
 R1
-R2
-w1651942253
-8C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv1.v
-FC:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv1.v
-L0 1
-R4
+Z8 dC:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part
+w1652270919
+8C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/conv1.v
+FC:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/conv1.v
+!i122 210
+L0 1 1310
+Z9 OV;L;2020.1;71
 r1
 !s85 0
 31
-!s108 1651942565.594000
-!s107 C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv1.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv1.v|
-!i113 0
-R5
+Z10 !s108 1652273194.000000
+!s107 C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/conv1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/conv1.v|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
 vconv1_verify
-DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
-R6
+DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+!s110 1652268504
 !i10b 1
-!s100 Qol^V2f]`95HJn1YTK5]C3
-I5=4]10dJe[Sino[G4Ym4d0
+!s100 SDLJa_:gD4VMnN6IC1Q5_0
+R7
+ILDj=dfbGn;f`cHVbm_Q673
 R1
-!s105 conv1_verify_sv_unit
 S1
-R2
-w1651317682
-8C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv1_verify.sv
-FC:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv1_verify.sv
-L0 1
-R4
+R8
+Z13 w1652094789
+8C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/conv1_verify.sv
+FC:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/conv1_verify.sv
+!i122 74
+L0 1 102
+R9
 r1
 !s85 0
 31
-!s108 1651942565.133000
-!s107 C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv1_verify.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv1_verify.sv|
-!i113 0
+!s108 1652268504.000000
+!s107 C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/conv1_verify.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/conv1_verify.sv|
+!i113 1
 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R12
 vconv1banks
-R6
+Z14 !s110 1652268505
 !i10b 1
-!s100 2f5[FZI8Jn1kCJT:;f8eA1
-IGQMD3;=m5Q0TC]89Nfi@I3
+!s100 PS:?2@>Sd6]6YcZXPkVhc3
+R7
+I4LaoJdCW0cFL2^4MA6^P^0
 R1
-R2
-w1651404008
-8C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv1banks.v
-FC:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv1banks.v
-L0 1
-R4
+R8
+R13
+8C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/conv1banks.v
+FC:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/conv1banks.v
+!i122 76
+L0 1 294
+R9
 r1
 !s85 0
 31
-!s108 1651942565.224000
-!s107 C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv1banks.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv1banks.v|
-!i113 0
+Z15 !s108 1652268505.000000
+!s107 C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/conv1banks.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/conv1banks.v|
+!i113 1
 R5
+R12
 vconv1buffer
-R6
+R14
 !i10b 1
-!s100 IA5aMh]mHoO5bgWf5F1<G2
-Ib`9gLP]JDG:fCPB]ZHUQb3
+!s100 VdlFVY[BW_SL4MaU>;JMf1
+R7
+IL4=mYAhl2TVTTEDM=d_?Z3
 R1
-R2
-w1651351098
-8C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv1buffer.v
-FC:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv1buffer.v
-L0 1
-R4
+R8
+R13
+8C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/conv1buffer.v
+FC:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/conv1buffer.v
+!i122 77
+L0 1 83
+R9
 r1
 !s85 0
 31
-!s108 1651942565.273000
-!s107 C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv1buffer.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv1buffer.v|
-!i113 0
+R15
+!s107 C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/conv1buffer.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/conv1buffer.v|
+!i113 1
 R5
+R12
 vconv1v2
-Z7 !s110 1651942432
+Z16 !s110 1651942432
 !i10b 1
 !s100 QWb6[l=Um]<5Ge2ITn^;V1
 I2OWae]hoEBJaQ5U6V]3Vb1
@@ -153,65 +165,74 @@ R5
 vconv2d1x1
 R6
 !i10b 1
-!s100 _o2BCTI2PIRGib2mIR8J<2
-IP[[kQfzg4e4>fFR5a=QZ=1
+!s100 7J<7IoaJ@_>_S^`NZ_ge[1
+R7
+IU5EG?EH;8hXBH1eGk?DAn0
 R1
-R2
-w1651581844
-8C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv2d1x1.v
-FC:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv2d1x1.v
-L0 3
-R4
+R8
+R13
+8C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/conv2d1x1.v
+FC:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/conv2d1x1.v
+!i122 211
+L0 3 114
+R9
 r1
 !s85 0
 31
-!s108 1651942565.004000
-!s107 C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv2d1x1.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv2d1x1.v|
-!i113 0
-R5
+R10
+!s107 C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/conv2d1x1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/conv2d1x1.v|
+!i113 1
+R11
+R12
 vconv2d3x3
-R6
+Z17 !s110 1652273195
 !i10b 1
-!s100 Uc>B9W<m@hZJR@Hn91mY]1
-I2?@2^XT9RK3o`j[z^jg9m2
+!s100 P@VDmUKc[?la^h4o1OTaA0
+R7
+IVSOcRBMLcP;Bh]8cnQ2W10
 R1
-R2
-w1651422103
-8C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv2d3x3.v
-FC:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv2d3x3.v
-L0 1
-R4
+R8
+w1652269713
+8C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/conv2d3x3.v
+FC:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/conv2d3x3.v
+!i122 212
+L0 1 124
+R9
 r1
 !s85 0
 31
-!s108 1651942565.085000
-!s107 C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv2d3x3.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv2d3x3.v|
-!i113 0
-R5
+R10
+!s107 C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/conv2d3x3.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/conv2d3x3.v|
+!i113 1
+R11
+R12
 vgetmax
-R6
+R17
 !i10b 1
-!s100 WT=cH@_U4<aA[6[2oc9?G0
-IUL^2zRW>7lh<Xa@[Ob`h;0
+!s100 =QCll=Am6NjPXg^XSd3982
+R7
+ICT7oa95MbYHYV^hFW>EQl3
 R1
-R2
-w1651251127
-8C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/getmax.v
-FC:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/getmax.v
-L0 1
-R4
+R8
+R13
+8C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/getmax.v
+FC:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/getmax.v
+!i122 213
+L0 1 10
+R9
 r1
 !s85 0
 31
-!s108 1651942565.362000
-!s107 C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/getmax.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/getmax.v|
-!i113 0
-R5
+Z18 !s108 1652273195.000000
+!s107 C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/getmax.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/getmax.v|
+!i113 1
+R11
+R12
 vimageControl
-Z8 !s110 1651942491
+Z19 !s110 1651942491
 !i10b 1
 !s100 6zUKzIlLm]1G8ze58G?aJ0
 IzWkRdRJTHBWT]B:MJPd@h3
@@ -253,25 +274,28 @@ r1
 R5
 nimage@process@top
 vinputimage
-R6
+R14
 !i10b 1
-!s100 In2[J2LM<k1EMQfOTJWT50
-IGh?JdHEU=^RjPdjVfcgDn2
+!s100 BKlOo`CTh<RX9Y53BTFRn1
+R7
+I3dI]W@No_d^<4HMM8]Q2E0
 R1
-R2
-w1651361268
-8C:\Users\Hisham Elreedy\Downloads\SpatialFilter-master\SpatialFilter-master\rtl\inputimage.v
-FC:\Users\Hisham Elreedy\Downloads\SpatialFilter-master\SpatialFilter-master\rtl\inputimage.v
-L0 1
-R4
+R8
+R13
+8C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/inputimage.v
+FC:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/inputimage.v
+!i122 80
+L0 1 55
+R9
 r1
 !s85 0
 31
-!s108 1651942565.453000
-!s107 C:\Users\Hisham Elreedy\Downloads\SpatialFilter-master\SpatialFilter-master\rtl\inputimage.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:\Users\Hisham Elreedy\Downloads\SpatialFilter-master\SpatialFilter-master\rtl\inputimage.v|
-!i113 0
+R15
+!s107 C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/inputimage.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/inputimage.v|
+!i113 1
 R5
+R12
 vlineBuffer
 R0
 !i10b 1
@@ -294,45 +318,51 @@ r1
 R5
 nline@buffer
 vmaxpool2d3x3
-R6
+R17
 !i10b 1
-!s100 j:[<RhR:7cZ=P<CZAz9;K2
-IOHJN5;cDT3A1^<O63B=_f3
+!s100 39QbGRX>5J5cUc:Gohni82
+R7
+IP45KIG:8;iMa9IT@f1U6H1
 R1
-R2
-w1651440971
-8C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/maxpool2d3x3.v
-FC:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/maxpool2d3x3.v
-L0 2
-R4
+R8
+R13
+8C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/maxpool2d3x3.v
+FC:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/maxpool2d3x3.v
+!i122 214
+L0 2 194
+R9
 r1
 !s85 0
 31
-!s108 1651942565.318000
-!s107 C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/maxpool2d3x3.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/maxpool2d3x3.v|
-!i113 0
-R5
+R18
+!s107 C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/maxpool2d3x3.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/maxpool2d3x3.v|
+!i113 1
+R11
+R12
 vmul_signed
-R6
+R17
 !i10b 1
-!s100 gU12>chbj6hoS]EUfLVeh3
-IknFZ6UJ`5PiNEQO>LTin53
+!s100 CWRUkie5?f3S:?8E=9Y083
+R7
+Ie_XO6PVXRNEN0<nj=GKT<1
 R1
-R2
-w1650414608
-8C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/mul_signed.v
-FC:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/mul_signed.v
-L0 1
-R4
+R8
+R13
+8C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/mul_signed.v
+FC:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/mul_signed.v
+!i122 215
+L0 1 38
+R9
 r1
 !s85 0
 31
-!s108 1651942565.180000
-!s107 C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/mul_signed.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/mul_signed.v|
-!i113 0
-R5
+R18
+!s107 C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/mul_signed.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/mul_signed.v|
+!i113 1
+R11
+R12
 vpingpongmem
 !s110 1651940609
 !i10b 1
@@ -353,28 +383,54 @@ r1
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/pingpongmem.v|
 !i113 0
 R5
-vsqueezeweights
-R6
+vpoolbanks
+R17
 !i10b 1
-!s100 TZM_5FZGmW88:PoRM`PAT1
-IkZC0c1FfA@11567CT:n;01
+!s100 l3gOU^4<A4SogaLF`D6dl3
+R7
+I_m9jKn^KPhBKi:>j5GjkO3
 R1
-R2
-w1651920652
-8C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/squeezeweights.v
-FC:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/squeezeweights.v
-L0 3
-R4
+R8
+w1652269134
+8C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/poolbanks.v
+FC:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/poolbanks.v
+!i122 216
+L0 1 1061
+R9
 r1
 !s85 0
 31
-!s108 1651942565.496000
-!s107 C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/squeezeweights.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/squeezeweights.v|
-!i113 0
-R5
-vtb
+R18
+!s107 C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/poolbanks.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/poolbanks.v|
+!i113 1
+R11
+R12
+vsqueezeweights
+Z20 !s110 1652273196
+!i10b 1
+!s100 Ao?UDRciaPlbiJbIEIgR:2
+R7
+IoC`Nh61zknSnH=ljI]C@<3
+R1
 R8
+w1652094790
+8C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/squeezeweights.v
+FC:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/squeezeweights.v
+!i122 217
+L0 3 285
+R9
+r1
+!s85 0
+31
+R18
+!s107 C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/squeezeweights.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/squeezeweights.v|
+!i113 1
+R11
+R12
+vtb
+R19
 !i10b 1
 !s100 GkU`5EHc;46fQLQjafUCU0
 I]@?jXBYl^``=?>:ecmPcE1
@@ -394,27 +450,30 @@ r1
 !i113 0
 R5
 vtoplevel
-R6
+R20
 !i10b 1
-!s100 aD2dTfn0ImGSH?dOQj6l[0
-Ij4g:=88GA_ZjDbEbYhhoQ0
+!s100 K1?cGKI0M00cFad9Z8O7b0
+R7
+IAgNggKDUWmdeOC>HBh[A[3
 R1
-R2
-w1651942395
-8C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/toplevel.v
-FC:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/toplevel.v
-L0 1
-R4
+R8
+w1652273184
+8C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/toplevel.v
+FC:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/toplevel.v
+!i122 218
+L0 1 76
+R9
 r1
 !s85 0
 31
-!s108 1651942565.650000
-!s107 C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/toplevel.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/toplevel.v|
-!i113 0
-R5
+!s108 1652273196.000000
+!s107 C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/toplevel.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/HISHAM ELREEDY/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/toplevel.v|
+!i113 1
+R11
+R12
 vtoplevelv2
-R7
+R16
 !i10b 1
 !s100 VLhdDSBcdPHP_XmIE;;Uc2
 IM9S>9=>3z0klE9dQgZk>a3

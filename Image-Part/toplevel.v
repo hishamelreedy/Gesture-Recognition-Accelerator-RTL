@@ -55,6 +55,7 @@ begin
         maxpooloutmem[i]<=maxpoolout[i*16+:16];
 end
 integer sentsize1 = 0;
+integer maxpoolsize = 55*55;
 always@(posedge clk)
 begin
    if(maxpoolvalid==0)
@@ -67,7 +68,7 @@ begin
    end
 end
 // Ping-Pong Memory
-
+pingpongmem mem (.clk(clk),.rst(rst),.inputsize(maxpoolsize),.wren(maxpooloutvalid),.rden(),.address1(sentsize1),.address2(),.datain(maxpoolout),.dataout());
 // Squeeze 1x1
 //squeezeweights sqwhts();
 endmodule

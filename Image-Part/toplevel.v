@@ -45,25 +45,22 @@ begin
    end
 end
 // Layer 2 MaxPool
-wire [63:0] maxpooloutvalid;
-wire [15:0] maxpoolout [0:63];
+wire maxpooloutvalid;
+wire [16*64-1:0] maxpoolout;
+reg [15:0] maxpooloutmem [0:63];
+maxpool2d st2 (.clk(clk),.rst(rst),.i_data_valid(maxpoolvalid),.pooladdr(pooladdr),.inp(conv1out[1023:0]),.maxpoolout(maxpoolout),.maxpoolvalid(maxpooloutvalid));
 always @(*)
 begin
-for (i=0; i<64; i=i+1)
-    conv1outmem[i]<=conv1out[i*16+:16];
+    for (i=0; i<64; i=i+1)
+        maxpooloutmem[i]<=maxpoolout[i*16+:16];
 end
-maxpool2d3x3 maxpool (.clk(clk),.rst(rst),.i_data_valid(maxpoolvalid),.datain(conv1outmem[0]),.address(pooladdr),.output_im(maxpoolout[0]),.o_max_data_valid(maxpooloutvalid[0]));
-maxpool2d3x3 maxpool1 (.clk(clk),.rst(rst),.i_data_valid(maxpoolvalid),.datain(conv1outmem[1]),.address(pooladdr),.output_im(maxpoolout[1]),.o_max_data_valid(maxpooloutvalid[1]));
-maxpool2d3x3 maxpool2 (.clk(clk),.rst(rst),.i_data_valid(maxpoolvalid),.datain(conv1outmem[2]),.address(pooladdr),.output_im(maxpoolout[2]),.o_max_data_valid(maxpooloutvalid[2]));
-maxpool2d3x3 maxpool3 (.clk(clk),.rst(rst),.i_data_valid(maxpoolvalid),.datain(conv1outmem[3]),.address(pooladdr),.output_im(maxpoolout[3]),.o_max_data_valid(maxpooloutvalid[3]));
-
 integer sentsize1 = 0;
 always@(posedge clk)
 begin
    if(maxpoolvalid==0)
         sentsize1 <= 0;
    if(maxpooloutvalid) begin
-        $fwrite(file1,"%h\n",maxpoolout[0]);
+        $fwrite(file1,"%h\n",maxpooloutmem[0]);
         sentsize1 = sentsize1+1;
        if(sentsize1==55*55)
            $stop;

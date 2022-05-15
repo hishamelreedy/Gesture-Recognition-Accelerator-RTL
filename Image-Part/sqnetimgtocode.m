@@ -59,3 +59,30 @@ for i=1:64
 end
 fclose(fileID);
 
+% Squeeze1 Weights
+load('test.mat');
+for kerid=1:16
+    kernel=zeros(1,1,64);
+    for ix=1:1
+        for jx=1:1
+            for kx=1:3
+                kernel(ix,jx,kx)=squeeze1weights(kerid,kx,ix,jx);
+            end
+        end
+    end
+    x=kernel;
+    kernel=pagetranspose(kernel);
+    kernel=kernel(:);
+    fileID = fopen(strcat('temp/sq1wf',num2str(kerid),'.txt'),'w');
+    d=sfi(kernel,wordlength,Fractionlength).hex;
+    for i=1:size(kernel)
+        fprintf(fileID,'%s\n',d(i,:));
+    end
+    fclose(fileID);
+end
+fileID = fopen('temp/biases.txt','w');
+for i=1:16
+    d=sfi(squeeze1bias(i),16,8).hex;
+    fprintf(fileID,'%s\n',d);
+end
+fclose(fileID);

@@ -11,60 +11,52 @@ module squeezeweights(firesel, addressf1, dataf1, addressfiltf1, biasf1,
                                );
 input [2:0] firesel;
 
-input [32*16-1:0] addressf1;
+input [32-1:0] addressf1;
 output [16*16-1:0] dataf1;
 input [32-1:0] addressfiltf1;
 output reg [15:0] biasf1;
-reg [32-1:0] addressmemf1 [0:16-1];
 reg [16-1:0] datamemf1 [0:16-1];
 
-input [32*16-1:0] addressf2;
+input [32-1:0] addressf2;
 output [16*16-1:0] dataf2;
 input [32-1:0] addressfiltf2;
 output reg [15:0] biasf2;
-reg [32-1:0] addressmemf2 [0:16-1];
 reg [16-1:0] datamemf2 [0:16-1];
 
-input [32*16-1:0] addressf3;
+input [32-1:0] addressf3;
 output [16*16-1:0] dataf3;
 input [32-1:0] addressfiltf3;
 output reg [15:0] biasf3;
-reg [32-1:0] addressmemf3 [0:16-1];
 reg [16-1:0] datamemf3 [0:16-1];
 
-input [32*16-1:0] addressf4;
+input [32-1:0] addressf4;
 output [16*16-1:0] dataf4;
 input [32-1:0] addressfiltf4;
 output reg [15:0] biasf4;
-reg [32-1:0] addressmemf4 [0:16-1];
 reg [16-1:0] datamemf4 [0:16-1];
 
-input [32*16-1:0] addressf5;
+input [32-1:0] addressf5;
 output [16*16-1:0] dataf5;
 input [32-1:0] addressfiltf5;
 output reg [15:0] biasf5;
-reg [32-1:0] addressmemf5 [0:16-1];
 reg [16-1:0] datamemf5 [0:16-1];
 
-input [32*16-1:0] addressf6;
+input [32-1:0] addressf6;
 output [16*16-1:0] dataf6;
 input [32-1:0] addressfiltf6;
 output reg [15:0] biasf6;
-reg [32-1:0] addressmemf6 [0:16-1];
 reg [16-1:0] datamemf6 [0:16-1];
 
-input [32*16-1:0] addressf7;
+input [32-1:0] addressf7;
 output [16*16-1:0] dataf7;
 input [32-1:0] addressfiltf7;
 output reg [15:0] biasf7;
-reg [32-1:0] addressmemf7 [0:16-1];
 reg [16-1:0] datamemf7 [0:16-1];
 
-input [32*16-1:0] addressf8;
+input [32-1:0] addressf8;
 output [16*16-1:0] dataf8;
 input [32-1:0] addressfiltf8;
 output reg [15:0] biasf8;
-reg [32-1:0] addressmemf8 [0:16-1];
 reg [16-1:0] datamemf8 [0:16-1];
 
 // Fire 1
@@ -91,6 +83,11 @@ reg [15:0] biasfire7 [64-1:0];
 // Fire 8
 reg [15:0] weightsfire8 [64*512*1*1-1:0];
 reg [15:0] biasfire8 [64-1:0];
+
+initial begin
+    $readmemh("sqnetparams/squeeze1/sq1wfall.txt",weightsfire1);
+    $readmemh("sqnetparams/squeeze1/biases.txt",biasfire1);
+end
 integer i;
 // Memory Banks 16 mem [Channels] * 8 mem [Filters]
 always @(*)
@@ -109,14 +106,14 @@ case (firesel)
         biasf8 = biasfire1[addressfiltf8];
         // Weights
         for (i=0; i<16; i=i+1) begin
-            datamemf1[i] = weightsfire1[addressmemf1[i]];
-            datamemf2[i] = weightsfire1[addressmemf2[i]];
-            datamemf3[i] = weightsfire1[addressmemf3[i]];
-            datamemf4[i] = weightsfire1[addressmemf4[i]];
-            datamemf5[i] = weightsfire1[addressmemf5[i]];
-            datamemf6[i] = weightsfire1[addressmemf6[i]];
-            datamemf7[i] = weightsfire1[addressmemf7[i]];
-            datamemf8[i] = weightsfire1[addressmemf8[i]];
+            datamemf1[i] = weightsfire1[addressf1+i];
+            datamemf2[i] = weightsfire1[addressf2+i];
+            datamemf3[i] = weightsfire1[addressf3+i];
+            datamemf4[i] = weightsfire1[addressf4+i];
+            datamemf5[i] = weightsfire1[addressf5+i];
+            datamemf6[i] = weightsfire1[addressf6+i];
+            datamemf7[i] = weightsfire1[addressf7+i];
+            datamemf8[i] = weightsfire1[addressf8+i];
         end
 end
 3'b001:begin
@@ -132,14 +129,14 @@ end
         biasf8 = biasfire2[addressfiltf8];
         // Weights
         for (i=0; i<16; i=i+1) begin
-            datamemf1[i] = weightsfire2[addressmemf1[i]];
-            datamemf2[i] = weightsfire2[addressmemf2[i]];
-            datamemf3[i] = weightsfire2[addressmemf3[i]];
-            datamemf4[i] = weightsfire2[addressmemf4[i]];
-            datamemf5[i] = weightsfire2[addressmemf5[i]];
-            datamemf6[i] = weightsfire2[addressmemf6[i]];
-            datamemf7[i] = weightsfire2[addressmemf7[i]];
-            datamemf8[i] = weightsfire2[addressmemf8[i]];
+            datamemf1[i] = weightsfire2[addressf1+i];
+            datamemf2[i] = weightsfire2[addressf2+i];
+            datamemf3[i] = weightsfire2[addressf3+i];
+            datamemf4[i] = weightsfire2[addressf4+i];
+            datamemf5[i] = weightsfire2[addressf5+i];
+            datamemf6[i] = weightsfire2[addressf6+i];
+            datamemf7[i] = weightsfire2[addressf7+i];
+            datamemf8[i] = weightsfire2[addressf8+i];
         end
 end
 3'b010:begin
@@ -155,14 +152,14 @@ end
         biasf8 = biasfire3[addressfiltf8];
         // Weights
         for (i=0; i<16; i=i+1) begin
-            datamemf1[i] = weightsfire3[addressmemf1[i]];
-            datamemf2[i] = weightsfire3[addressmemf2[i]];
-            datamemf3[i] = weightsfire3[addressmemf3[i]];
-            datamemf4[i] = weightsfire3[addressmemf4[i]];
-            datamemf5[i] = weightsfire3[addressmemf5[i]];
-            datamemf6[i] = weightsfire3[addressmemf6[i]];
-            datamemf7[i] = weightsfire3[addressmemf7[i]];
-            datamemf8[i] = weightsfire3[addressmemf8[i]];
+            datamemf1[i] = weightsfire3[addressf1+i];
+            datamemf2[i] = weightsfire3[addressf2+i];
+            datamemf3[i] = weightsfire3[addressf3+i];
+            datamemf4[i] = weightsfire3[addressf4+i];
+            datamemf5[i] = weightsfire3[addressf5+i];
+            datamemf6[i] = weightsfire3[addressf6+i];
+            datamemf7[i] = weightsfire3[addressf7+i];
+            datamemf8[i] = weightsfire3[addressf8+i];
         end
 end
 3'b011:begin
@@ -178,14 +175,14 @@ end
         biasf8 = biasfire4[addressfiltf8];
         // Weights
         for (i=0; i<16; i=i+1) begin
-            datamemf1[i] = weightsfire4[addressmemf1[i]];
-            datamemf2[i] = weightsfire4[addressmemf2[i]];
-            datamemf3[i] = weightsfire4[addressmemf3[i]];
-            datamemf4[i] = weightsfire4[addressmemf4[i]];
-            datamemf5[i] = weightsfire4[addressmemf5[i]];
-            datamemf6[i] = weightsfire4[addressmemf6[i]];
-            datamemf7[i] = weightsfire4[addressmemf7[i]];
-            datamemf8[i] = weightsfire4[addressmemf8[i]];
+            datamemf1[i] = weightsfire4[addressf1+i];
+            datamemf2[i] = weightsfire4[addressf2+i];
+            datamemf3[i] = weightsfire4[addressf3+i];
+            datamemf4[i] = weightsfire4[addressf4+i];
+            datamemf5[i] = weightsfire4[addressf5+i];
+            datamemf6[i] = weightsfire4[addressf6+i];
+            datamemf7[i] = weightsfire4[addressf7+i];
+            datamemf8[i] = weightsfire4[addressf8+i];
         end
 end
 3'b100:begin
@@ -201,14 +198,14 @@ end
         biasf8 = biasfire5[addressfiltf8];
         // Weights
         for (i=0; i<16; i=i+1) begin
-            datamemf1[i] = weightsfire5[addressmemf1[i]];
-            datamemf2[i] = weightsfire5[addressmemf2[i]];
-            datamemf3[i] = weightsfire5[addressmemf3[i]];
-            datamemf4[i] = weightsfire5[addressmemf4[i]];
-            datamemf5[i] = weightsfire5[addressmemf5[i]];
-            datamemf6[i] = weightsfire5[addressmemf6[i]];
-            datamemf7[i] = weightsfire5[addressmemf7[i]];
-            datamemf8[i] = weightsfire5[addressmemf8[i]];
+            datamemf1[i] = weightsfire5[addressf1+i];
+            datamemf2[i] = weightsfire5[addressf2+i];
+            datamemf3[i] = weightsfire5[addressf3+i];
+            datamemf4[i] = weightsfire5[addressf4+i];
+            datamemf5[i] = weightsfire5[addressf5+i];
+            datamemf6[i] = weightsfire5[addressf6+i];
+            datamemf7[i] = weightsfire5[addressf7+i];
+            datamemf8[i] = weightsfire5[addressf8+i];
         end
 end
 3'b101:begin
@@ -224,14 +221,14 @@ end
         biasf8 = biasfire6[addressfiltf8];
         // Weights
         for (i=0; i<16; i=i+1) begin
-            datamemf1[i] = weightsfire6[addressmemf1[i]];
-            datamemf2[i] = weightsfire6[addressmemf2[i]];
-            datamemf3[i] = weightsfire6[addressmemf3[i]];
-            datamemf4[i] = weightsfire6[addressmemf4[i]];
-            datamemf5[i] = weightsfire6[addressmemf5[i]];
-            datamemf6[i] = weightsfire6[addressmemf6[i]];
-            datamemf7[i] = weightsfire6[addressmemf7[i]];
-            datamemf8[i] = weightsfire6[addressmemf8[i]];
+            datamemf1[i] = weightsfire6[addressf1+i];
+            datamemf2[i] = weightsfire6[addressf2+i];
+            datamemf3[i] = weightsfire6[addressf3+i];
+            datamemf4[i] = weightsfire6[addressf4+i];
+            datamemf5[i] = weightsfire6[addressf5+i];
+            datamemf6[i] = weightsfire6[addressf6+i];
+            datamemf7[i] = weightsfire6[addressf7+i];
+            datamemf8[i] = weightsfire6[addressf8+i];
         end
 end
 3'b110:begin
@@ -247,14 +244,14 @@ end
         biasf8 = biasfire7[addressfiltf8];
         // Weights
         for (i=0; i<16; i=i+1) begin
-            datamemf1[i] = weightsfire7[addressmemf1[i]];
-            datamemf2[i] = weightsfire7[addressmemf2[i]];
-            datamemf3[i] = weightsfire7[addressmemf3[i]];
-            datamemf4[i] = weightsfire7[addressmemf4[i]];
-            datamemf5[i] = weightsfire7[addressmemf5[i]];
-            datamemf6[i] = weightsfire7[addressmemf6[i]];
-            datamemf7[i] = weightsfire7[addressmemf7[i]];
-            datamemf8[i] = weightsfire7[addressmemf8[i]];
+            datamemf1[i] = weightsfire7[addressf1+i];
+            datamemf2[i] = weightsfire7[addressf2+i];
+            datamemf3[i] = weightsfire7[addressf3+i];
+            datamemf4[i] = weightsfire7[addressf4+i];
+            datamemf5[i] = weightsfire7[addressf5+i];
+            datamemf6[i] = weightsfire7[addressf6+i];
+            datamemf7[i] = weightsfire7[addressf7+i];
+            datamemf8[i] = weightsfire7[addressf8+i];
         end
 end
 3'b111:begin
@@ -270,14 +267,14 @@ end
         biasf8 = biasfire8[addressfiltf8];
         // Weights
         for (i=0; i<16; i=i+1) begin
-            datamemf1[i] = weightsfire8[addressmemf1[i]];
-            datamemf2[i] = weightsfire8[addressmemf2[i]];
-            datamemf3[i] = weightsfire8[addressmemf3[i]];
-            datamemf4[i] = weightsfire8[addressmemf4[i]];
-            datamemf5[i] = weightsfire8[addressmemf5[i]];
-            datamemf6[i] = weightsfire8[addressmemf6[i]];
-            datamemf7[i] = weightsfire8[addressmemf7[i]];
-            datamemf8[i] = weightsfire8[addressmemf8[i]];
+            datamemf1[i] = weightsfire8[addressf1+i];
+            datamemf2[i] = weightsfire8[addressf2+i];
+            datamemf3[i] = weightsfire8[addressf3+i];
+            datamemf4[i] = weightsfire8[addressf4+i];
+            datamemf5[i] = weightsfire8[addressf5+i];
+            datamemf6[i] = weightsfire8[addressf6+i];
+            datamemf7[i] = weightsfire8[addressf7+i];
+            datamemf8[i] = weightsfire8[addressf8+i];
         end
 end
 endcase

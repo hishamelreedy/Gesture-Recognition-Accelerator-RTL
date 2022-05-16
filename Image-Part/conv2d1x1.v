@@ -1,9 +1,10 @@
 // Conv 2D size 1x1
 // Parallelism 16 channel
 module conv2d1x1#(parameter datwidth=16, inputchannel=64, inputsize=55)
-                (clk, rst, i_data_valid,
+                (clk, rst, i_data_valid, firstvalue,
                  imgdata, kernel, bias, o_convolved_data, o_convolved_data_valid);
 input clk, rst, i_data_valid;
+input firstvalue;
 input [16*16-1:0] imgdata, kernel;
 reg [15:0] imgdatamem [0:15];
 reg [15:0] kernelmem [0:15];
@@ -90,7 +91,7 @@ begin
     if (rst)
         channelsum <= 0;
     else begin
-        if (multDataValid)
+        if (multDataValid && firstvalue)
             channelsum <= bias+{totalsum[23:16],totalsum[15:8]};
         else if(multDataValid)
             channelsum <= channelsum + {totalsum[23:16],totalsum[15:8]};

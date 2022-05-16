@@ -222,17 +222,14 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	maxpool2d3x3
 
-} {} {}} pingpongmem.v {0 {vlog -work work -vopt -stats=none {C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/pingpongmem.v}
+} {} {}} pingpongmem.v {1 {vlog -work work -vopt -stats=none {C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/pingpongmem.v}
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
 -- Compiling module pingpongmem
-** Error: C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/pingpongmem.v(39): (vlog-2730) Undefined variable: 'wrpntr'.
 
-** Error: C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/pingpongmem.v(39): (vlog-2730) Undefined variable: 'data'.
+Top level modules:
+	pingpongmem
 
-** Error: C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/pingpongmem.v(49): (vlog-2730) Undefined variable: 'rdpntr'.
-
-
-} {4.0 5.0 6.0 7.0 8.0 9.0} {}} {C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv2d1x1.v} {1 {vlog -work work -vopt -stats=none {C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv2d1x1.v}
+} {} {}} {C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv2d1x1.v} {1 {vlog -work work -vopt -stats=none {C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv2d1x1.v}
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
 -- Compiling module conv2d1x1
 
@@ -276,6 +273,13 @@ Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
 
 Top level modules:
 	mul_signed
+
+} {} {}} toplevel.v {1 {vlog -work work -vopt -stats=none {C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/toplevel.v}
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module toplevel
+
+Top level modules:
+	toplevel
 
 } {} {}} inputimage.v {1 {vlog -work work -vopt -stats=none {C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/inputimage.v}
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014

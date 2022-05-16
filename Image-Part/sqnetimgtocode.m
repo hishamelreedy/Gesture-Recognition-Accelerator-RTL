@@ -45,19 +45,19 @@ for kerid=1:64
     x=kernel;
     kernel=pagetranspose(kernel);
     kernel=kernel(:);
-    fileID = fopen(strcat('temp/conv1wf',num2str(kerid),'.txt'),'w');
-    d=sfi(kernel,wordlength,Fractionlength).hex;
-    for i=1:size(kernel)
-        fprintf(fileID,'%s\n',d(i,:));
-    end
-    fclose(fileID);
+%     fileID = fopen(strcat('temp/conv1wf',num2str(kerid),'.txt'),'w');
+%     d=sfi(kernel,wordlength,Fractionlength).hex;
+%     for i=1:size(kernel)
+%         fprintf(fileID,'%s\n',d(i,:));
+%     end
+%     fclose(fileID);
 end
-fileID = fopen('temp/biases.txt','w');
-for i=1:64
-    d=sfi(conv1bias(i),32,16).hex;
-    fprintf(fileID,'%s\n',d);
-end
-fclose(fileID);
+% fileID = fopen('temp/biases.txt','w');
+% for i=1:64
+%     d=sfi(conv1bias(i),32,16).hex;
+%     fprintf(fileID,'%s\n',d);
+% end
+% fclose(fileID);
 
 % Squeeze1 Weights
 load('test.mat');
@@ -65,7 +65,7 @@ for kerid=1:16
     kernel=zeros(1,1,64);
     for ix=1:1
         for jx=1:1
-            for kx=1:3
+            for kx=1:64
                 kernel(ix,jx,kx)=squeeze1weights(kerid,kx,ix,jx);
             end
         end
@@ -74,7 +74,7 @@ for kerid=1:16
     kernel=pagetranspose(kernel);
     kernel=kernel(:);
     fileID = fopen(strcat('temp/sq1wf',num2str(kerid),'.txt'),'w');
-    d=sfi(kernel,wordlength,Fractionlength).hex;
+    d=sfi(kernel,16,8).hex;
     for i=1:size(kernel)
         fprintf(fileID,'%s\n',d(i,:));
     end

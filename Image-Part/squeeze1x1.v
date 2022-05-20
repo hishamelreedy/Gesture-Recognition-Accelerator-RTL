@@ -106,7 +106,7 @@ begin
     end
     else
     begin
-        if(currentRdChBuffer == inputchannel-1)
+        if(currentRdChBuffer == inputchannel)
             currentRdChBuffer <= 0;
         else
             currentRdChBuffer <= currentRdChBuffer + 32'd16;
@@ -121,7 +121,7 @@ begin
         rdCounter <= 0;
     else 
     begin
-        if (currentRdChBuffer == inputchannel-1)
+        if (currentRdChBuffer == inputchannel)
             if(rdCounter == inputsize-1)
                 rdCounter <= 0;
             else
@@ -139,7 +139,7 @@ begin
     end
     else
     begin
-        if(rdCounter == inputsize-1 && currentRdChBuffer==inputchannel-1)
+        if(rdCounter == inputsize-1 && currentRdChBuffer==inputchannel)
             if (currentRdLineBuffer==inputsize-1)
                 currentRdLineBuffer <= 0;
             else
@@ -157,8 +157,8 @@ begin
     end
     else
     begin
-        if (currentRdLineBuffer == inputsize-1 && rdCounter == inputsize-1 && currentRdChBuffer==inputchannel-1)
-            if(rdfilt == filtersize-1)
+        if (currentRdLineBuffer == inputsize-1 && rdCounter == inputsize-1 && currentRdChBuffer==inputchannel)
+            if(rdfilt == filtersize)
                 rdfilt <= 0;
             else
                 rdfilt <= rdfilt + 32'd8;
@@ -213,6 +213,6 @@ conv2d1x1 PE7 (.clk(clk), .rst(rst), .i_data_valid(i_data_valid), .imgdata(pingp
 // Filter 8
 conv2d1x1 PE8 (.clk(clk), .rst(rst), .i_data_valid(i_data_valid), .imgdata(pingpongdata), .kernel(dataf8), .bias(biasf8),.firstvalue(first),.o_convolved_data(outimw[7]),.o_convolved_data_valid(sqvalid[7]));
 
-assign outvalid = |sqvalid;
+assign outvalid = &sqvalid && (currentRdChBuffer==input_channel);
 
 endmodule

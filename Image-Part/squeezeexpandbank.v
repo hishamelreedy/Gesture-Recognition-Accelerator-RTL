@@ -1,4 +1,4 @@
-module squeezeexpandbank();
+module squeezeexpandbank(clk, rst, rden, wren, datain, dataout);
 reg [15:0] bank1 [0:111*111-1];
 reg [15:0] bank2 [0:111*111-1];
 reg [15:0] bank3 [0:111*111-1];
@@ -7,10 +7,10 @@ reg [15:0] bank5 [0:111*111-1];
 reg [15:0] bank6 [0:111*111-1];
 reg [15:0] bank7 [0:111*111-1];
 reg [15:0] bank8 [0:111*111-1];
-reg rden, wren, clk, rst;
-reg [16*8-1:0] datain;
+input rden, wren, clk, rst;
+input [16*8-1:0] datain;
 reg [15:0] datainmem [0:7];
-wire [16*16-1:0] dataout;
+output [16*8-1:0] dataout;
 reg [15:0] dataoutmem [0:7];
 reg [31:0] address1,address2;
 

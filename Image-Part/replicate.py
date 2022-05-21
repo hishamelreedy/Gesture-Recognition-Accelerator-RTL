@@ -66,3 +66,13 @@ textfile = open("rep.txt", "w")
 for element in texts:
     textfile.write(element + "\n")
 textfile.close()
+
+texts=[]
+for i in range(1,64):
+    text = "maxpool2d3x3 maxpool{} (.clk(clk),.rst(rst),.i_data_valid(i_data_valid),.datain(inpmem[{}]),.address(pooladdr),.output_im(maxpooloutmem[{}]),.o_max_data_valid(maxpooloutvalid[{}]));".format(i,i,i,i)
+    texts.append(text)
+
+textfile = open("rep.txt", "w")
+for element in texts:
+    textfile.write(element + "\n")
+textfile.close()

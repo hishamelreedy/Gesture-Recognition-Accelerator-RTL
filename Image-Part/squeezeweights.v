@@ -12,49 +12,49 @@ module squeezeweights(firesel, addressf1, dataf1, addressfiltf1, biasf1,
 input [2:0] firesel;
 
 input [32-1:0] addressf1;
-output [16*16-1:0] dataf1;
+output reg [16*16-1:0] dataf1;
 input [32-1:0] addressfiltf1;
 output reg [15:0] biasf1;
 reg [16-1:0] datamemf1 [0:16-1];
 
 input [32-1:0] addressf2;
-output [16*16-1:0] dataf2;
+output reg [16*16-1:0] dataf2;
 input [32-1:0] addressfiltf2;
 output reg [15:0] biasf2;
 reg [16-1:0] datamemf2 [0:16-1];
 
 input [32-1:0] addressf3;
-output [16*16-1:0] dataf3;
+output reg [16*16-1:0] dataf3;
 input [32-1:0] addressfiltf3;
 output reg [15:0] biasf3;
 reg [16-1:0] datamemf3 [0:16-1];
 
 input [32-1:0] addressf4;
-output [16*16-1:0] dataf4;
+output reg [16*16-1:0] dataf4;
 input [32-1:0] addressfiltf4;
 output reg [15:0] biasf4;
 reg [16-1:0] datamemf4 [0:16-1];
 
 input [32-1:0] addressf5;
-output [16*16-1:0] dataf5;
+output reg [16*16-1:0] dataf5;
 input [32-1:0] addressfiltf5;
 output reg [15:0] biasf5;
 reg [16-1:0] datamemf5 [0:16-1];
 
 input [32-1:0] addressf6;
-output [16*16-1:0] dataf6;
+output reg [16*16-1:0] dataf6;
 input [32-1:0] addressfiltf6;
 output reg [15:0] biasf6;
 reg [16-1:0] datamemf6 [0:16-1];
 
 input [32-1:0] addressf7;
-output [16*16-1:0] dataf7;
+output reg [16*16-1:0] dataf7;
 input [32-1:0] addressfiltf7;
 output reg [15:0] biasf7;
 reg [16-1:0] datamemf7 [0:16-1];
 
 input [32-1:0] addressf8;
-output [16*16-1:0] dataf8;
+output reg [16*16-1:0] dataf8;
 input [32-1:0] addressfiltf8;
 output reg [15:0] biasf8;
 reg [16-1:0] datamemf8 [0:16-1];
@@ -280,5 +280,19 @@ end
 endcase
 end
 
+always @(*)
+begin
+    for(i=0;i<16;i=i+1)
+    begin
+        dataf1[i*16+:16] <= datamemf1[i];
+        dataf2[i*16+:16] <= datamemf2[i];
+        dataf3[i*16+:16] <= datamemf3[i];
+        dataf4[i*16+:16] <= datamemf4[i];
+        dataf5[i*16+:16] <= datamemf5[i];
+        dataf6[i*16+:16] <= datamemf6[i];
+        dataf7[i*16+:16] <= datamemf7[i];
+        dataf8[i*16+:16] <= datamemf8[i];
+    end
+end
 
 endmodule

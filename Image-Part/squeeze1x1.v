@@ -28,63 +28,63 @@ input [16*16-1:0] pingpongdata;
 
 // Output Data
 output outvalid;
-output [16*8-1:0] outim;
+output reg [16*8-1:0] outim;
 wire [15:0] outimw [0:7];
 // Choose which Fire Configuration
 reg [31:0] inputchannel, chcyc, inputsize,  filtersize, filtcyc;
 always @(*)
 begin
     case (firesel)
-        3'd0:begin
+        3'd0:begin // 2*4*55*3 = 1320
             inputchannel = 32'd64;
             //chcyc = 32'd4;
             inputsize = 32'd55;
             filtersize = 32'd16;
             //filtcyc = 32'd2;
         end
-        3'd1:begin
+        3'd1:begin // 2*8*55*3 = 2640
             inputchannel = 32'd128;
             //chcyc = 32'd8;
             inputsize = 32'd55;
             filtersize = 32'd16;
             //filtcyc = 32'd2;
         end
-        3'd2:begin
+        3'd2:begin // 8*4*27*3 = 2592
             inputchannel = 32'd128;
             //chcyc = 32'd8;
             inputsize = 32'd27;
             filtersize = 32'd32;
             //filtcyc = 32'd4;
         end
-        3'd3:begin
+        3'd3:begin // 4*16*27*3 = 5184
             inputchannel = 32'd256;
             //chcyc = 32'd16;
             inputsize = 32'd27;
             filtersize = 32'd32;
             //filtcyc = 32'd4;
         end
-        3'd4:begin
+        3'd4:begin // 16*6*13*3 = 3744
             inputchannel = 32'd256;
             //chcyc = 32'd16;
             inputsize = 32'd13;
             filtersize = 32'd48;
             //filtcyc = 32'd6;
         end
-        3'd5:begin
+        3'd5:begin // 32*6*13*3 = 7844
             inputchannel = 32'd384;
             //chcyc = 32'd32;
             inputsize = 32'd13;
             filtersize = 32'd48;
             //filtcyc = 32'd6;
         end
-        3'd6:begin
+        3'd6:begin // 32*8*13*3 = 9984
             inputchannel = 32'd384;
             //chcyc = 32'd32;
             inputsize = 32'd13;
             filtersize = 32'd64;
             //filtcyc = 32'd8;
         end
-        3'd7:begin
+        3'd7:begin // 64*8*13*3= 19968
             inputchannel = 32'd512;
             //chcyc = 32'd64;
             inputsize = 32'd13;
@@ -106,7 +106,7 @@ begin
     end
     else
     begin
-        if(currentRdChBuffer == inputchannel)
+        if(currentRdChBuffer == inputchannel-32'd16 || i_data_valid == 1'b0 )
             currentRdChBuffer <= 0;
         else
             currentRdChBuffer <= currentRdChBuffer + 32'd16;
@@ -121,8 +121,8 @@ begin
         rdCounter <= 0;
     else 
     begin
-        if (currentRdChBuffer == inputchannel)
-            if(rdCounter == inputsize-1)
+        if (currentRdChBuffer == inputchannel-32'd16)
+            if(rdCounter == inputsize-1 || i_data_valid == 1'b0)
                 rdCounter <= 0;
             else
                 rdCounter <= rdCounter + 1;
@@ -139,8 +139,8 @@ begin
     end
     else
     begin
-        if(rdCounter == inputsize-1 && currentRdChBuffer==inputchannel)
-            if (currentRdLineBuffer==inputsize-1)
+        if(rdCounter == inputsize-1 && currentRdChBuffer == inputchannel-32'd16)
+            if (currentRdLineBuffer==inputsize-1 || i_data_valid == 1'b0)
                 currentRdLineBuffer <= 0;
             else
                 currentRdLineBuffer <= currentRdLineBuffer + 1;
@@ -157,39 +157,41 @@ begin
     end
     else
     begin
-        if (currentRdLineBuffer == inputsize-1 && rdCounter == inputsize-1 && currentRdChBuffer==inputchannel)
-            if(rdfilt == filtersize)
+        if (currentRdLineBuffer == inputsize-1 && rdCounter == inputsize-1 && currentRdChBuffer == inputchannel-32'd16)
+            if(rdfilt == filtersize-32'd8 || i_data_valid == 1'b0)
                 rdfilt <= 0;
             else
                 rdfilt <= rdfilt + 32'd8;
     end
 end
 // Address Generator
-wire [31-1:0] chaddr, lineaddr, filtaddr,filtoffset;
-assign filtoffset = inputsize * inputsize * inputchannel;
-assign filtaddr = rdfilt * inputsize * inputsize * inputchannel;
-assign chaddr=currentRdChBuffer*inputsize*inputsize;
-assign lineaddr = currentRdLineBuffer * inputsize;
+wire [31:0] filtaddr,filtoffset;
+assign filtoffset = inputchannel;
+assign filtaddr = rdfilt * inputchannel;
+
 
 // Fetch Squeeze weights from squeeze weights block
-assign addressf1 = filtaddr+chaddr+lineaddr+rdCounter;
+assign addressf1 = filtaddr;
 assign addressfiltf1 = rdfilt;
-assign addressf2 = filtaddr+filtoffset+chaddr+lineaddr+rdCounter;
+assign addressf2 = filtaddr+filtoffset;
 assign addressfiltf2 = rdfilt+1;
-assign addressf3 = filtaddr+filtoffset+filtoffset+chaddr+lineaddr+rdCounter;
+assign addressf3 = filtaddr+filtoffset+filtoffset;
 assign addressfiltf3 = rdfilt+2;
-assign addressf4 = filtaddr+filtoffset+filtoffset+filtoffset+chaddr+lineaddr+rdCounter;
+assign addressf4 = filtaddr+filtoffset+filtoffset+filtoffset;
 assign addressfiltf4 = rdfilt+3;
-assign addressf5 = filtaddr+filtoffset+filtoffset+filtoffset+filtoffset+chaddr+lineaddr+rdCounter;
+assign addressf5 = filtaddr+filtoffset+filtoffset+filtoffset+filtoffset;
 assign addressfiltf5 = rdfilt+4;
-assign addressf6=filtaddr+filtoffset+filtoffset+filtoffset+filtoffset+filtoffset+chaddr+lineaddr+rdCounter;
+assign addressf6=filtaddr+filtoffset+filtoffset+filtoffset+filtoffset+filtoffset;
 assign addressfiltf6 = rdfilt+5;
-assign addressf7=filtaddr+filtoffset+filtoffset+filtoffset+filtoffset+filtoffset+filtoffset+chaddr+lineaddr+rdCounter;
+assign addressf7=filtaddr+filtoffset+filtoffset+filtoffset+filtoffset+filtoffset+filtoffset;
 assign addressfiltf7 = rdfilt+6;
-assign addressf8=filtaddr+filtoffset+filtoffset+filtoffset+filtoffset+filtoffset+filtoffset+filtoffset+chaddr+lineaddr+rdCounter;
+assign addressf8=filtaddr+filtoffset+filtoffset+filtoffset+filtoffset+filtoffset+filtoffset+filtoffset;
 assign addressfiltf8 = rdfilt+7;
 
 // Fetch Img data from ping pong mem
+wire [31:0] chaddr, lineaddr;
+assign chaddr=currentRdChBuffer*inputsize*inputsize;
+assign lineaddr = currentRdLineBuffer * inputsize;
 assign imgaddr = chaddr+lineaddr+rdCounter;
 
 // PEs
@@ -213,6 +215,13 @@ conv2d1x1 PE7 (.clk(clk), .rst(rst), .i_data_valid(i_data_valid), .imgdata(pingp
 // Filter 8
 conv2d1x1 PE8 (.clk(clk), .rst(rst), .i_data_valid(i_data_valid), .imgdata(pingpongdata), .kernel(dataf8), .bias(biasf8),.firstvalue(first),.o_convolved_data(outimw[7]),.o_convolved_data_valid(sqvalid[7]));
 
-assign outvalid = &sqvalid && (currentRdChBuffer==input_channel);
-
+assign outvalid = &sqvalid && (currentRdChBuffer==inputchannel-32'd16);
+integer i;
+always @(*)
+begin
+    for (i=0; i<8; i=i+1)
+    begin
+        outim[i*16+:16] <= outimw[i];
+    end
+end
 endmodule

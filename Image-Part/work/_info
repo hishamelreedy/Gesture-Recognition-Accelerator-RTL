@@ -39,54 +39,54 @@ r1
 !i113 0
 Z6 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 vconv1
-Z7 !s110 1653334951
+R2
+r1
+!s85 0
+31
 !i10b 1
 !s100 nN8kUGQebbUTT6:XXbQNF2
 IM@2`D=b?;I4dcV7C:HWNV2
-R2
-Z8 dC:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part
-Z9 w1652302726
+Z7 dC:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part
+Z8 w1652302726
 8C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/conv1.v
 FC:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/conv1.v
 L0 1
 R5
-r1
-!s85 0
-31
-!s108 1653334951.298000
+!s108 1653343507.100000
 !s107 C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/conv1.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/conv1.v|
 !i113 0
 R6
 vconv1_verify
 DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
-R2
-r1
-!s85 0
-31
+Z9 !s110 1653343506
 !i10b 1
-!s100 onaK4fIC?Ed<i`=n;FWFV1
-IL19XNe`z^[0bl[_kmGXeC0
+!s100 R<Y=UGL?DG`BKLn>LE<dC0
+IPenEoB0Q@f7bN4G1D;f:N3
+R2
 !s105 conv1_verify_sv_unit
 S1
-R8
-w1653334892
+R7
+w1653337520
 8C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/conv1_verify.sv
 FC:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/conv1_verify.sv
 L0 1
 R5
-!s108 1653334950.690000
+r1
+!s85 0
+31
+!s108 1653343506.435000
 !s107 C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/conv1_verify.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/conv1_verify.sv|
 !i113 0
 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 vconv1banks
-Z10 !s110 1653334950
+R9
 !i10b 1
 !s100 2f5[FZI8Jn1kCJT:;f8eA1
 I?@E2Y=VJ1Q[`:3jIUzieE3
 R2
-R8
+R7
 w1651404008
 8C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/conv1banks.v
 FC:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/conv1banks.v
@@ -95,18 +95,18 @@ R5
 r1
 !s85 0
 31
-!s108 1653334950.892000
+!s108 1653343506.545000
 !s107 C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/conv1banks.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/conv1banks.v|
 !i113 0
 R6
 vconv1buffer
-R10
+R9
 !i10b 1
 !s100 IA5aMh]mHoO5bgWf5F1<G2
 IQ1mPD>KBW`h8iQ;?>a=Kk1
 R2
-R8
+R7
 w1651351098
 8C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/conv1buffer.v
 FC:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/conv1buffer.v
@@ -115,13 +115,13 @@ R5
 r1
 !s85 0
 31
-!s108 1653334950.941000
+!s108 1653343506.587000
 !s107 C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/conv1buffer.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/conv1buffer.v|
 !i113 0
 R6
 vconv1v2
-Z11 !s110 1651942432
+Z10 !s110 1651942432
 !i10b 1
 !s100 QWb6[l=Um]<5Ge2ITn^;V1
 I2OWae]hoEBJaQ5U6V]3Vb1
@@ -160,41 +160,39 @@ R5
 !i113 0
 R6
 vconv2d1x1
-R10
+R2
+r1
+!s85 0
+31
 !i10b 1
 !s100 TJXTdegkQRGT6cGgDhXc41
 ITL633EEl`LNGh:iTzanR:3
-R2
-R8
+R7
 w1653332363
 8C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/conv2d1x1.v
 FC:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/conv2d1x1.v
 L0 3
 R5
-r1
-!s85 0
-31
-!s108 1653334950.602000
+!s108 1653343506.321000
 !s107 C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/conv2d1x1.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/conv2d1x1.v|
 !i113 0
 R6
 vconv2d3x3
-R10
+R2
+r1
+!s85 0
+31
 !i10b 1
 !s100 Uc>B9W<m@hZJR@Hn91mY]1
 IA92geBIhl5Re<JE4iP4Bc2
-R2
-R8
+R7
 w1651422103
 8C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/conv2d3x3.v
 FC:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/conv2d3x3.v
 L0 1
 R5
-r1
-!s85 0
-31
-!s108 1653334950.646000
+!s108 1653343506.364000
 !s107 C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/conv2d3x3.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/conv2d3x3.v|
 !i113 0
@@ -207,19 +205,19 @@ r1
 !i10b 1
 !s100 WT=cH@_U4<aA[6[2oc9?G0
 ICm4KO6TIV:<cFNHcfaY<M2
-R8
+R7
 w1651251127
 8C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/getmax.v
 FC:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/getmax.v
 L0 1
 R5
-!s108 1653334951.040000
+!s108 1653343506.700000
 !s107 C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/getmax.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/getmax.v|
 !i113 0
 R6
 vimageControl
-Z12 !s110 1651942491
+Z11 !s110 1651942491
 !i10b 1
 !s100 6zUKzIlLm]1G8ze58G?aJ0
 IzWkRdRJTHBWT]B:MJPd@h3
@@ -261,12 +259,12 @@ r1
 R6
 nimage@process@top
 vinputimage
-R7
+R9
 !i10b 1
 !s100 In2[J2LM<k1EMQfOTJWT50
 IMAh[>VhgeCK@mi=@lP6II1
 R2
-R8
+R7
 w1651361268
 8C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/inputimage.v
 FC:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/inputimage.v
@@ -275,7 +273,7 @@ R5
 r1
 !s85 0
 31
-!s108 1653334951.144000
+!s108 1653343506.838000
 !s107 C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/inputimage.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/inputimage.v|
 !i113 0
@@ -302,41 +300,39 @@ r1
 R6
 nline@buffer
 vmaxpool2d
-R7
+R2
+r1
+!s85 0
+31
 !i10b 1
 !s100 e]e7d0zdE54`LMNLXOZKV2
 IW8^`EF=>D<;W545Z[IEKW1
-R2
-R8
+R7
 w1653144458
 8C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/maxpool2d.v
 FC:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/maxpool2d.v
 L0 1
 R5
-r1
-!s85 0
-31
-!s108 1653334951.425000
+!s108 1653343507.234000
 !s107 C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/maxpool2d.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/maxpool2d.v|
 !i113 0
 R6
 vmaxpool2d3x3
-R7
+R2
+r1
+!s85 0
+31
 !i10b 1
 !s100 j:[<RhR:7cZ=P<CZAz9;K2
 IaH=a9678benRP<QWJKVm90
-R2
-R8
+R7
 w1651440971
 8C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/maxpool2d3x3.v
 FC:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/maxpool2d3x3.v
 L0 2
 R5
-r1
-!s85 0
-31
-!s108 1653334951.000000
+!s108 1653343506.657000
 !s107 C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/maxpool2d3x3.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/maxpool2d3x3.v|
 !i113 0
@@ -349,119 +345,114 @@ r1
 !i10b 1
 !s100 gU12>chbj6hoS]EUfLVeh3
 IKa<_a4blfeZ`d^mGmQPkZ3
-R8
+R7
 w1650414608
 8C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/mul_signed.v
 FC:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/mul_signed.v
 L0 1
 R5
-!s108 1653334950.758000
+!s108 1653343506.505000
 !s107 C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/mul_signed.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/mul_signed.v|
 !i113 0
 R6
 vpingpongmem
-R7
+R2
+r1
+!s85 0
+31
 !i10b 1
 !s100 Q9G_[bGW0mm?dcfUOR^M50
 IZXTlXz=V[]W4=>2A?>8Wl2
-R2
-R8
+R7
 w1652645013
 8C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/pingpongmem.v
 FC:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/pingpongmem.v
 L0 1
 R5
-r1
-!s85 0
-31
-!s108 1653334951.083000
+!s108 1653343506.767000
 !s107 C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/pingpongmem.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/pingpongmem.v|
 !i113 0
 R6
 vpoolbanks
-R7
+R2
+r1
+!s85 0
+31
 !i10b 1
 !s100 _0Tk5:QR[oK_2gSPY4jH^2
 I>iNJFUF;A2@^OBS9K`kzM0
-R2
+R7
 R8
-R9
 8C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/poolbanks.v
 FC:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/poolbanks.v
 L0 1
 R5
-r1
-!s85 0
-31
-!s108 1653334951.473000
+!s108 1653343507.306000
 !s107 C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/poolbanks.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/poolbanks.v|
 !i113 0
 R6
 vsqueeze1x1
-R7
-!i10b 1
-!s100 Hnm5g>K9;2nH>BB9>RNi=0
-I?QDZTNiokC5m0@^CF]2Tc2
 R2
-R8
-w1653161634
+r1
+!s85 0
+31
+!i10b 1
+!s100 kWnD>f>`egnJn[<hY`ob<1
+IGE:FL@i=_b4K1H<2ddkzo1
+R7
+w1653343495
 8C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/squeeze1x1.v
 FC:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/squeeze1x1.v
 L0 5
 R5
-r1
-!s85 0
-31
-!s108 1653334951.233000
+!s108 1653343506.946000
 !s107 C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/squeeze1x1.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/squeeze1x1.v|
 !i113 0
 R6
 vsqueezeexpandbank
-R7
-!i10b 1
-!s100 XRHA`@oH0JlmlI65E2eR?2
-IGY_e_^N02^gQPIo^CWcl_3
 R2
-R8
-w1653040380
+r1
+!s85 0
+31
+!i10b 1
+!s100 mC3]4l`>ez]n4LkR2YmO80
+IiiL:VF@Q0Dc5BehbTgoG_3
+R7
+w1653336749
 8C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/squeezeexpandbank.v
 FC:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/squeezeexpandbank.v
 L0 1
 R5
-r1
-!s85 0
-31
-!s108 1653334951.546000
+!s108 1653343507.387000
 !s107 C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/squeezeexpandbank.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/squeezeexpandbank.v|
 !i113 0
 R6
 vsqueezeweights
-R7
+R2
+r1
+!s85 0
+31
 !i10b 1
 !s100 D[HQ@^>8=SiZ2Y3=MZ[Ih3
 I=E;RRea8XI:o>LEOSleAW2
-R2
-R8
+R7
 w1653129223
 8C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/squeezeweights.v
 FC:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/squeezeweights.v
 L0 3
 R5
-r1
-!s85 0
-31
-!s108 1653334951.188000
+!s108 1653343506.902000
 !s107 C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/squeezeweights.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/squeezeweights.v|
 !i113 0
 R6
 vtb
-R12
+R11
 !i10b 1
 !s100 GkU`5EHc;46fQLQjafUCU0
 I]@?jXBYl^``=?>:ecmPcE1
@@ -481,27 +472,26 @@ r1
 !i113 0
 R6
 vtoplevel
-R7
-!i10b 1
-!s100 7hBW9j:kVoOmW_?CMbiU50
-IXX<2Uf;6>UkI[>O0`k;6A0
 R2
-R8
-w1653132149
+r1
+!s85 0
+31
+!i10b 1
+!s100 k`oKzQQ39kXjTSbQIPheO2
+I8g3jFWP_Jm;WUae5^h0gl0
+R7
+w1653336772
 8C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/toplevel.v
 FC:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/toplevel.v
 L0 1
 R5
-r1
-!s85 0
-31
-!s108 1653334951.361000
+!s108 1653343507.173000
 !s107 C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/toplevel.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/toplevel.v|
 !i113 0
 R6
 vtoplevelv2
-R11
+R10
 !i10b 1
 !s100 VLhdDSBcdPHP_XmIE;;Uc2
 IM9S>9=>3z0klE9dQgZk>a3

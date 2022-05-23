@@ -125,7 +125,7 @@ begin
     end
 end
 //Squeeze Expand Bank
-squeezeexpandbank sqexpbnk (.clk(clk),.rst(rst),.rden(),.wren(squeezeoutvalid),.datain(sqout),.dataout());
+squeezeexpandbank sqexpbnk (.clk(clk),.rst(rst),.rden(),.address1(sentsize2),.address2(),.wren(squeezeoutvalid),.datain(sqout),.dataout());
 // Expand 1x1
 
 endmodule

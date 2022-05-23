@@ -198,6 +198,7 @@ assign imgaddr = chaddr+lineaddr+rdCounter;
 wire [7:0] sqvalid;
 wire first;
 assign first = (chaddr==32'd0);
+
 // Filter 1
 conv2d1x1 PE1 (.clk(clk), .rst(rst), .i_data_valid(i_data_valid), .imgdata(pingpongdata), .kernel(dataf1), .bias(biasf1),.firstvalue(first),.o_convolved_data(outimw[0]),.o_convolved_data_valid(sqvalid[0]));
 // Filter 2

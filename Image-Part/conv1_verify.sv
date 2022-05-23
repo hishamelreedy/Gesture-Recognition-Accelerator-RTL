@@ -19,7 +19,7 @@ int outfile;
 logic [15:0] maxpoolout [0:55*55-1];
 // Fire 1
 logic [15:0] inpsqueeze [0:64*55*55-1];
-logic [15:0] squeezeweight [0:55*55-1];
+logic [15:0] squeezeweight [0:64*1*1-1];
 logic [15:0] sqbias;
 logic [15:0] sqbiases [0:15];
 logic [15:0] sqout [0:55*55-1];

@@ -1,4 +1,4 @@
-module squeezeexpandbank(clk, rst, rden, wren, datain, dataout);
+module squeezeexpandbank(clk, rst, rden, wren, address1, address2, datain, dataout);
 reg [15:0] bank1 [0:111*111-1];
 reg [15:0] bank2 [0:111*111-1];
 reg [15:0] bank3 [0:111*111-1];
@@ -12,9 +12,13 @@ input [16*8-1:0] datain;
 reg [15:0] datainmem [0:7];
 output [16*8-1:0] dataout;
 reg [15:0] dataoutmem [0:7];
-reg [31:0] address1,address2;
-
+input [31:0] address1,address2;
 integer i;
+always @(*)
+begin
+    for (i=0; i<8;i=i+1)
+        datainmem[i] <= datain[i*16+:16];
+end
 always @(posedge clk)
 if (wren) begin
     bank1[address1] <= datainmem[0]; 

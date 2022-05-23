@@ -16,10 +16,16 @@ logic [15:0] conv1out [0:111*111-1];
 string filename;
 int outfile;
 // Max Pool
-reg [15:0] maxpoolout [0:55*55-1];
+logic [15:0] maxpoolout [0:55*55-1];
+// Fire 1
+logic [15:0] inpsqueeze [0:64*55*55-1];
+logic [15:0] squeezeweight [0:55*55-1];
+logic [15:0] sqbias;
+logic [15:0] sqbiases [0:15];
+logic [15:0] sqout [0:55*55-1];
 // Simulation
 initial begin
-$readmemh("inpf.txt", img);
+// $readmemh("inpf.txt", img);
 // Conv 1 Layer
 // $readmemh("sqnetparams/conv1/biases.txt", conv1biases);
 // outfile = $fopen("./sqnetparams/conv1/output/conv1opall.txt","a");
@@ -36,15 +42,38 @@ $readmemh("inpf.txt", img);
 // $fclose(outfile);
 
 // Max Pool Layer
-outfile = $fopen("./sqnetparams/maxpool1/output/maxpoolopall.txt","a");
-for (int i=1; i<65; i++) begin
-    filename = $sformatf("sqnetparams/conv1/output/conv1op%0d.txt",i);         
-    $readmemh(filename,conv1out);
-    maxpool2d3x3();
+// outfile = $fopen("./sqnetparams/maxpool1/output/maxpoolopall.txt","a");
+// for (int i=1; i<65; i++) begin
+//     filename = $sformatf("sqnetparams/conv1/output/conv1op%0d.txt",i);         
+//     $readmemh(filename,conv1out);
+//     maxpool2d3x3();
+//     filename = $sformatf("sqnetparams/maxpool1/output/maxpool1op%0d.txt",i);         
+//     $writememh(filename,maxpoolout);
+//     for(int j=0; j<55*55; j++)
+//         $fdisplay(outfile,"%h",maxpoolout[j]);
+// end
+// $fclose(outfile);
+
+// Fire 1 Squeeze 
+outfile = $fopen("./sqnetparams/squeeze1/output/sq1outall.txt","a");
+$readmemh("sqnetparams/squeeze1/biases.txt",sqbiases);
+$readmemh("sqnetparams/maxpool1/output/maxpoolopall.txt",inpsqueeze);
+for (int i=1; i<=16; i++) begin
+    // load weights
+    filename = $sformatf("sqnetparams/squeeze1/sq1wf%0d.txt",i);         
+    $readmemh(filename,squeezeweight);
+    // load input image
     filename = $sformatf("sqnetparams/maxpool1/output/maxpool1op%0d.txt",i);         
-    $writememh(filename,maxpoolout);
+    $readmemh(filename,maxpoolout);
+    // load bias
+    sqbias = sqbiases[i-1];
+    // Execute
+    fire1_squeeze1x1();
+    // save
+    filename = $sformatf("sqnetparams/squeeze1/output/sq1op%0d.txt",i);         
+    $writememh(filename,sqout);
     for(int j=0; j<55*55; j++)
-        $fdisplay(outfile,"%h",maxpoolout[j]);
+        $fdisplay(outfile,"%h",sqout[j]);
 end
 $fclose(outfile);
 
@@ -98,6 +127,32 @@ reg [15:0] value;
         end
     end
 
+endtask
+task fire1_squeeze1x1;
+reg [15:0] tmp1;
+	//output_im += filter_index * input_size_x * input_size_y;//start_channel is for 1x1 feature map in fire layer
+
+	//loop over output feature map
+	//out
+	for(int i = 0; i < 55; i++)
+	begin
+		for(int j = 0; j < 55; j++)
+		begin
+			tmp1 = sqbias;
+
+			for(int k = 0; k < 64; k++)
+			begin
+				a = inpsqueeze[k * 55 * 55 + i * 55 + j];
+                b = squeezeweight[k];
+                #10ns;
+                tmp1 = {z[23:16],z[15:8]} + tmp1;
+            end
+			//add relu after conv
+			//*output_im = (tmp > 0.0) ? tmp : 0.0;
+			//output_im++;
+            sqout[i*55 + j] = tmp1;
+        end
+    end
 endtask
 endmodule
 

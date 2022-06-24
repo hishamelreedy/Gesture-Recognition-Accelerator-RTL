@@ -96,6 +96,19 @@ squeezeweights sqwhts(.firesel(firesel),.addressf1(sqadf1), .dataf1(sqdatf1), .a
                                .addressf7(sqadf7), .dataf7(sqdatf7), .addressfiltf7(sqadff7), .biasf7(sqbias7),
                                .addressf8(sqadf8), .dataf8(sqdatf8), .addressfiltf8(sqadff8), .biasf8(sqbias8));
 wire squeezeoutvalid;
+// Debug
+// reg [15:0] debugmem [0:193599];
+// reg [16*16-1:0] debugdata;
+// initial
+// begin
+//     $readmemh("sqnetparams/maxpool1/output/maxpoolopall.txt",debugmem);
+// end
+// always @(*)
+// begin
+// for (i=0; i<16; i=i+1)
+//     debugdata[i*16+:16]<=debugmem[imgaddr+i];
+// end
+// end debug
 squeeze1x1 sqst (.clk(clk), .rst(rst), .i_data_valid(squeezevalid), .firesel(firesel), .imgaddr(imgaddr), .pingpongdata(pingpongdata),
                   .addressf1(sqadf1), .addressfiltf1(sqadff1), .addressf2(sqadf2), .addressfiltf2(sqadff2),
                   .addressf3(sqadf3), .addressfiltf3(sqadff3), .addressf4(sqadf4), .addressfiltf4(sqadff4),
@@ -113,6 +126,7 @@ begin
     firesel = 3'd0;
     file3 = $fopen("opfire1sq1x1.txt","w");
 end
+
 // Output
 integer sentsize2 = 0;
 always@(posedge clk)

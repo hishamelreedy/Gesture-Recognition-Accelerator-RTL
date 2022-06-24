@@ -34,13 +34,6 @@ Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
 Top level modules:
 	conv1_verify
 
-} {} {}} conv2d1x1.v {1 {vlog -work work -vopt -stats=none {C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/conv2d1x1.v}
-Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
--- Compiling module conv2d1x1
-
-Top level modules:
-	conv2d1x1
-
 } {} {}} {C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/toplevel.v} {1 {vlog -work work -vopt -stats=none {C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/toplevel.v}
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
 -- Compiling module toplevel
@@ -208,13 +201,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 
 Top level modules:
 	maxpool2d3x3
-
-} {} {}} pingpongmem.v {1 {vlog -work work -vopt -stats=none {C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part/pingpongmem.v}
-Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
--- Compiling module pingpongmem
-
-Top level modules:
-	pingpongmem
 
 } {} {}} {C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv2d1x1.v} {1 {vlog -work work -vopt -stats=none {C:/Users/Hisham Elreedy/Downloads/SpatialFilter-master/SpatialFilter-master/rtl/conv2d1x1.v}
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014

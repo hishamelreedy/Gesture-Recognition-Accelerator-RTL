@@ -67,9 +67,11 @@ begin
     multDataValid <= i_data_valid;
 end
 // Adder Tree
-reg [2*datwidth-1:0] sum1,sum2,sum3,sum4,sum5,sum6;
-reg [2*datwidth-1:0] sum123, sum456;
-reg [2*datwidth-1:0] totalsum;
+reg [2*datwidth-1:0] sum1,sum2,sum3,sum4,sum5,sum6 ='d0;
+reg [2*datwidth-1:0] sum123, sum456='d0;
+reg [2*datwidth-1:0] totalsum='d0;
+reg [2*datwidth-1:0] totalsum2;
+
 always @(*)
 begin
     // Channel Adder Tree
@@ -81,9 +83,20 @@ begin
     sum5 = multData[12] + multData[13];
     sum6 = multData[14] + multData[15];
     sum456 = sum4 + sum5 + sum6;
-    totalsum = sum123 + sum456;
 end
-
+always @(*)
+begin
+    if (firstvalue)
+        totalsum = sum123 + sum456 + bias;
+    else
+        totalsum = sum123 + sum456;
+    totalsum2 = sum123 + sum456;
+end
+reg sumValid;
+always @(posedge clk)
+begin
+    sumValid <= multDataValid;
+end
 // Accumulator
 reg [15:0] channelsum;
 always @(posedge clk)
@@ -91,10 +104,10 @@ begin
     if (rst)
         channelsum <= 0;
     else begin
-        if (multDataValid && firstvalue)
-            channelsum <= bias+{totalsum[23:16],totalsum[15:8]};
-        else if(multDataValid)
+        if(sumValid)
             channelsum <= channelsum + {totalsum[23:16],totalsum[15:8]};
+        else
+            channelsum <= 'd0;
     end
 end
 

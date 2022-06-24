@@ -167,7 +167,7 @@ end
 // Address Generator
 wire [31:0] filtaddr,filtoffset;
 assign filtoffset = inputchannel;
-assign filtaddr = rdfilt * inputchannel;
+assign filtaddr = rdfilt * inputchannel + currentRdChBuffer;
 
 
 // Fetch Squeeze weights from squeeze weights block
@@ -197,24 +197,37 @@ assign imgaddr = chaddr+lineaddr+rdCounter;
 // PEs
 wire [7:0] sqvalid;
 wire first;
-assign first = (chaddr==32'd0);
+assign first = (currentRdChBuffer==32'd0);
 
+reg [16*16-1:0] dataf1d, dataf2d, dataf3d, dataf4d,
+                  dataf5d, dataf6d, dataf7d, dataf8d;
+always @(posedge clk)
+begin
+    dataf1d <= dataf1;
+    dataf2d <= dataf2;
+    dataf3d <= dataf3;
+    dataf4d <= dataf4;
+    dataf5d <= dataf5;
+    dataf6d <= dataf6;
+    dataf7d <= dataf7;
+    dataf8d <= dataf8;
+end
 // Filter 1
-conv2d1x1 PE1 (.clk(clk), .rst(rst), .i_data_valid(i_data_valid), .imgdata(pingpongdata), .kernel(dataf1), .bias(biasf1),.firstvalue(first),.o_convolved_data(outimw[0]),.o_convolved_data_valid(sqvalid[0]));
+conv2d1x1 PE1 (.clk(clk), .rst(rst), .i_data_valid(i_data_valid), .imgdata(pingpongdata), .kernel(dataf1d), .bias(biasf1),.firstvalue(first),.o_convolved_data(outimw[0]),.o_convolved_data_valid(sqvalid[0]));
 // Filter 2
-conv2d1x1 PE2 (.clk(clk), .rst(rst), .i_data_valid(i_data_valid), .imgdata(pingpongdata), .kernel(dataf2), .bias(biasf2),.firstvalue(first),.o_convolved_data(outimw[1]),.o_convolved_data_valid(sqvalid[1]));
+conv2d1x1 PE2 (.clk(clk), .rst(rst), .i_data_valid(i_data_valid), .imgdata(pingpongdata), .kernel(dataf2d), .bias(biasf2),.firstvalue(first),.o_convolved_data(outimw[1]),.o_convolved_data_valid(sqvalid[1]));
 // Filter 3
-conv2d1x1 PE3 (.clk(clk), .rst(rst), .i_data_valid(i_data_valid), .imgdata(pingpongdata), .kernel(dataf3), .bias(biasf3),.firstvalue(first),.o_convolved_data(outimw[2]),.o_convolved_data_valid(sqvalid[2]));
+conv2d1x1 PE3 (.clk(clk), .rst(rst), .i_data_valid(i_data_valid), .imgdata(pingpongdata), .kernel(dataf3d), .bias(biasf3),.firstvalue(first),.o_convolved_data(outimw[2]),.o_convolved_data_valid(sqvalid[2]));
 // Filter 4
-conv2d1x1 PE4 (.clk(clk), .rst(rst), .i_data_valid(i_data_valid), .imgdata(pingpongdata), .kernel(dataf4), .bias(biasf4),.firstvalue(first),.o_convolved_data(outimw[3]),.o_convolved_data_valid(sqvalid[3]));
+conv2d1x1 PE4 (.clk(clk), .rst(rst), .i_data_valid(i_data_valid), .imgdata(pingpongdata), .kernel(dataf4d), .bias(biasf4),.firstvalue(first),.o_convolved_data(outimw[3]),.o_convolved_data_valid(sqvalid[3]));
 // Filter 5
-conv2d1x1 PE5 (.clk(clk), .rst(rst), .i_data_valid(i_data_valid), .imgdata(pingpongdata), .kernel(dataf5), .bias(biasf5),.firstvalue(first),.o_convolved_data(outimw[4]),.o_convolved_data_valid(sqvalid[4]));
+conv2d1x1 PE5 (.clk(clk), .rst(rst), .i_data_valid(i_data_valid), .imgdata(pingpongdata), .kernel(dataf5d), .bias(biasf5),.firstvalue(first),.o_convolved_data(outimw[4]),.o_convolved_data_valid(sqvalid[4]));
 // Filter 6
-conv2d1x1 PE6 (.clk(clk), .rst(rst), .i_data_valid(i_data_valid), .imgdata(pingpongdata), .kernel(dataf6), .bias(biasf6),.firstvalue(first),.o_convolved_data(outimw[5]),.o_convolved_data_valid(sqvalid[5]));
+conv2d1x1 PE6 (.clk(clk), .rst(rst), .i_data_valid(i_data_valid), .imgdata(pingpongdata), .kernel(dataf6d), .bias(biasf6),.firstvalue(first),.o_convolved_data(outimw[5]),.o_convolved_data_valid(sqvalid[5]));
 // Filter 7
-conv2d1x1 PE7 (.clk(clk), .rst(rst), .i_data_valid(i_data_valid), .imgdata(pingpongdata), .kernel(dataf7), .bias(biasf7),.firstvalue(first),.o_convolved_data(outimw[6]),.o_convolved_data_valid(sqvalid[6]));
+conv2d1x1 PE7 (.clk(clk), .rst(rst), .i_data_valid(i_data_valid), .imgdata(pingpongdata), .kernel(dataf7d), .bias(biasf7),.firstvalue(first),.o_convolved_data(outimw[6]),.o_convolved_data_valid(sqvalid[6]));
 // Filter 8
-conv2d1x1 PE8 (.clk(clk), .rst(rst), .i_data_valid(i_data_valid), .imgdata(pingpongdata), .kernel(dataf8), .bias(biasf8),.firstvalue(first),.o_convolved_data(outimw[7]),.o_convolved_data_valid(sqvalid[7]));
+conv2d1x1 PE8 (.clk(clk), .rst(rst), .i_data_valid(i_data_valid), .imgdata(pingpongdata), .kernel(dataf8d), .bias(biasf8),.firstvalue(first),.o_convolved_data(outimw[7]),.o_convolved_data_valid(sqvalid[7]));
 
 assign outvalid = &sqvalid && (currentRdChBuffer==inputchannel-32'd16);
 integer i;

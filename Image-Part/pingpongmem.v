@@ -46,7 +46,7 @@ end
 always @(posedge clk)
 if (rden) begin
     for (i=0;i<16;i=i+1)
-        dataoutmem[i] <= datamem[address2+i];
+        dataoutmem[i] <= datamem[address2+(i*55*55)];
 end
 always @(*)
 begin

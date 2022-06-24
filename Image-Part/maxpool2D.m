@@ -14,15 +14,18 @@ for i=1:2:110
                     end
                 end
             end
-            out(i,j,k) = tmp;
+            if tmp > 0
+                out(i,j,k) = tmp;
+            end
         end
     end
 end
 out(2:2:end,:,:)=[];
 out(:,2:2:end,:)=[];
-maxpool = out;
-maxpool = sfi(maxpool,16,8);
-x=maxpool(:,:,1);
-y=x.hex;
-a = conv1out(:,:,1);
-b = a.hex;
+maxpoolout = out;
+% maxpool = sfi(maxpool,16,8);
+% x=maxpool(:,:,1);
+% y=x.hex;
+% a = conv1out(:,:,1);
+% b = a.hex;
+save('maxpoolout.mat','maxpoolout')

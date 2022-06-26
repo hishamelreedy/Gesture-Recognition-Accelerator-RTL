@@ -1,0 +1,23 @@
+{C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part-v2/rtl/conv1_tb.v} {1 {vlog -work work -vopt -stats=none {C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part-v2/rtl/conv1_tb.v}
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module conv1_tb
+
+Top level modules:
+	conv1_tb
+
+} {} {}} {C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part-v2/rtl/conv2d1x1.v} {1 {vlog -work work -vopt -stats=none {C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part-v2/rtl/conv2d1x1.v}
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module conv2d1x1
+
+Top level modules:
+	conv2d1x1
+
+} {} {}} {C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part-v2/rtl/conv2d3x3.v} {1 {vlog -work work -vopt -stats=none {C:/Users/Hisham Elreedy/OneDrive/Documents/Gesture-Recognition-Accelerator-RTL/Image-Part-v2/rtl/conv2d3x3.v}
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module conv2d3x3
+-- Compiling module mul_signed
+
+Top level modules:
+	conv2d3x3
+
+} {} {}}
